@@ -64,7 +64,7 @@
     svg {
       height: rem(24px);
       width: rem(16px);
-      fill: $brand-01;
+      fill: palette('classic', 'brand-01');
     }
   }
   .#{$prefix}--carousel__item {

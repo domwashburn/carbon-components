@@ -21,18 +21,18 @@
     position: relative;
     list-style: none;
     display: block;
-    background-color: $field-01;
+    background-color: palette('classic', 'field-01');
     border: none;
-    box-shadow: 0 1px 0 0 $text-02;
+    box-shadow: 0 1px 0 0 palette('classic', 'text-02');
     order: 1;
     width: 100%;
     height: rem(40px);
     cursor: pointer;
-    color: $text-01;
+    color: palette('classic', 'text-01');
 
     &:focus {
       outline: none;
-      box-shadow: 0 2px 0 0 $brand-01;
+      box-shadow: 0 2px 0 0 palette('classic', 'brand-01');
     }
 
     &.#{$prefix}--dropdown--open:focus {
@@ -46,7 +46,7 @@
   }
 
   .#{$prefix}--dropdown--light {
-    background-color: $field-02;
+    background-color: palette('classic', 'field-02');
   }
 
   .#{$prefix}--dropdown--up {
@@ -56,7 +56,7 @@
   }
 
   .#{$prefix}--dropdown__arrow {
-    fill: $brand-01;
+    fill: palette('classic', 'brand-01');
     position: absolute;
     right: 1rem;
     top: 1.175rem;
@@ -68,7 +68,7 @@
   }
 
   .#{$prefix}--dropdown[data-value=''] .#{$prefix}--dropdown-text {
-    color: $text-01;
+    color: palette('classic', 'text-01');
   }
 
   .#{$prefix}--dropdown-text {
@@ -88,7 +88,7 @@
     @include reset;
     @include layer('overlay');
     @include typescale('zeta');
-    background-color: $ui-01;
+    background-color: palette('classic', 'ui-01');
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -119,7 +119,7 @@
       background-color: $hover-row;
       outline: 1px solid transparent;
       text-decoration: underline;
-      color: $text-01;
+      color: palette('classic', 'text-01');
     }
   }
 
@@ -168,18 +168,18 @@
     }
 
     &[data-value=''] .#{$prefix}--dropdown-text {
-      color: $brand-01;
+      color: palette('classic', 'brand-01');
     }
 
     .#{$prefix}--dropdown-text {
       display: inline-block;
       padding-right: 1.5rem;
       overflow: visible;
-      color: $brand-01;
+      color: palette('classic', 'brand-01');
     }
 
     .#{$prefix}--dropdown-text:hover {
-      background-color: $field-01;
+      background-color: palette('classic', 'field-01');
     }
 
     &.#{$prefix}--dropdown--open:focus {
@@ -207,8 +207,8 @@
     }
 
     .#{$prefix}--dropdown-link:hover {
-      background-color: $field-01;
-      color: $text-01;
+      background-color: palette('classic', 'field-01');
+      color: palette('classic', 'text-01');
     }
   }
 

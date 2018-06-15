@@ -28,8 +28,8 @@
     @include font-family;
     appearance: none;
     border: none;
-    background-color: $field-01;
-    color: $text-01;
+    background-color: palette('classic', 'field-01');
+    color: palette('classic', 'text-01');
     font-weight: 600;
     padding: 0 $spacing-2xl;
     text-overflow: ellipsis;
@@ -41,11 +41,11 @@
     }
 
     &:focus ~ .#{$prefix}--search-magnifier {
-      fill: $brand-01;
+      fill: palette('classic', 'brand-01');
     }
 
     &::placeholder {
-      color: $text-02;
+      color: palette('classic', 'text-02');
       font-weight: 400;
     }
 
@@ -55,7 +55,7 @@
   }
 
   .#{$prefix}--search--light .#{$prefix}--search-input {
-    background: $field-02;
+    background: palette('classic', 'field-02');
   }
 
   .#{$prefix}--search--sm .#{$prefix}--search-input {
@@ -78,7 +78,7 @@
 
   .#{$prefix}--search-magnifier {
     left: 0.75rem;
-    fill: $ui-05;
+    fill: palette('classic', 'ui-05');
     z-index: 2;
   }
 
@@ -86,14 +86,14 @@
     @include button-reset(false);
 
     transition: opacity $transition--base;
-    fill: $ui-05;
+    fill: palette('classic', 'ui-05');
     cursor: pointer;
     visibility: visible;
     opacity: 1;
   }
 
   .#{$prefix}--search-close:focus {
-    outline: 1px solid $brand-01;
+    outline: 1px solid palette('classic', 'brand-01');
     outline-offset: 2px;
   }
 
@@ -113,7 +113,7 @@
     width: rem(40px);
     min-width: rem(40px);
     margin-left: $spacing-2xs;
-    background-color: $ui-01;
+    background-color: palette('classic', 'ui-01');
     position: relative;
     padding: 0;
     outline: 1px solid transparent;
@@ -134,13 +134,13 @@
   .#{$prefix}--search-button:hover,
   .#{$prefix}--search-button:focus {
     cursor: pointer;
-    background-color: $brand-01;
+    background-color: palette('classic', 'brand-01');
     outline: 1px solid transparent;
   }
 
   .#{$prefix}--search-button:hover svg,
   .#{$prefix}--search-button:focus svg {
-    fill: $ui-01;
+    fill: palette('classic', 'ui-01');
   }
 
   .#{$prefix}--search-close--hidden {

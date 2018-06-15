@@ -49,77 +49,17 @@ $nav-06: $color__teal-50 !default;
 $nav-07: $color__blue-30 !default;
 $nav-08: $color__blue-51 !default;
 
-$hover-primary: darken($brand-01, 10%) !default;
-$hover-primary-text: darken($brand-01, 15%) !default;
-$hover-danger: darken($support-01, 10%) !default;
-$hover-secondary: $brand-01 !default;
-$hover-row: rgba($brand-02, 0.1) !default;
-
-// Global
-$input-border: 1px solid transparent !default;
-$input-label-weight: 600 !default;
-
-// Button Theme Variables
-$button-font-weight: 600 !default;
-$button-font-size: 0.875rem !default;
-$button-border-radius: 0 !default;
-$button-height: 40px !default;
-$button-padding: 0 $spacing-md !default;
-$button-padding-sm: 0 $spacing-xs !default;
-$button-border-width: 2px !default;
-
-// Accordion (Reverse)
-$accordion-flex-direction: row !default;
-$accordion-justify-content: flex-start !default;
-$accordion-arrow-margin: 0 0 0 $spacing-2xs !default;
-$accordion-title-margin: 0 0 0 $spacing-md !default;
-$accordion-content-padding: 0 $spacing-md 0 $spacing-2xl !default;
-
-// Card
-$card-text-align: center !default;
-$card-flex-align: center !default;
-
-// Checkbox
-$checkbox-border-width: 2px !default;
-
-// Code Snippet
-$snippet-background-color: $ui-01 !default;
-$snippet-border-color: $ui-03 !default;
-
-// Content Switcher
-$content-switcher-border-radius: 8px !default;
-$content-switcher-option-border: 1px solid $brand-01 !default;
-
-// Data Table
-$data-table-heading-transform: uppercase !default;
-$data-table-heading-border-bottom: 1px solid $brand-01 !default;
-$data-table-row-height: 2rem !default;
-
-// Modal
-$modal-border-top: $brand-01 4px solid !default;
-$modal-footer-background-color: $ui-02 !default;
-
-// Progress Indicator
-$progress-indicator-bar-width: 1px inset transparent !default;
-$progress-indicator-stroke-width: 5 !default;
-$progress-indicator-line-offset: 0.625rem !default;
-
-// Radio Button
-$radio-border-width: 2px !default;
-
-// Structured Theme Variables
-$structured-list-padding: 2rem !default;
-$structured-list-text-transform: none !default;
-
-// Skeleton Loading
-
-$skeleton: rgba($color__blue-51, 0.1) !default; //old $field-01
-
 // ------------------//
 //  Theme Variables  //
 // ------------------//
 
-// Retaining existing color variables above to hopefully avoid breaking anything too much...
+// Notes:
+// Retaining existing color variables and mapping them to the light AND
+// dark theme for now. This should avoid breaking changes and retain
+// compatability with existing carbon themes making use of the existing
+// variable names. Removing them would be a breaking change...
+
+//
 // Creating color theme variables and maps below
 // Using variables inside the theme maps to allow developers to override themes without
 // new color variables have been given abstract names to clearly convey the colors use rather than the color itself
@@ -127,7 +67,7 @@ $skeleton: rgba($color__blue-51, 0.1) !default; //old $field-01
 // TODO: map color variables to a light theme
 
 // Light Color Theme Variables
-$light-ui__brand-01: maroon !default;
+$light-ui__brand-01: $brand-01 !default;
 $light-ui__brand-02: $brand-02 !default;
 $light-ui__brand-03: $brand-03 !default;
 $light-ui__inverse-01: $inverse-01 !default; // inverse of what?
@@ -265,10 +205,10 @@ $__palette: (
 		'focus-highlight': rgba(#00b6cb, .75), // Color: Aqua 30
 		'disabled': #a6a5a6, // Color: Gray 30
 		// Status Colors
-		'status-info': $dark-ui__support-04, // Color: Blue 50
-		'status-success': $dark-ui__support-02, // Color: Green 50
-		'status-warn': $dark-ui__support-03, // Color: Yellow 10
-		'status-error': $dark-ui__support-01, // Color: Red 50
+		'status-info': $light-ui__support-04, // Color: Blue 50
+		'status-success': $light-ui__support-02, // Color: Green 50
+		'status-warn': $light-ui__support-03, // Color: Yellow 10
+		'status-error': $light-ui__support-01, // Color: Red 50
 	),
 
 	// theme map with identical keys for dark theme
@@ -301,5 +241,71 @@ $__palette: (
 );
 
 @function palette($palette, $color) {
-  @return map-get(map-get($__palette-v2, $palette), $color);
+  @return map-get(map-get($__palette, $palette), $color);
 }
+
+$hover-primary: darken(palette('classic', 'brand-01'), 10%) !default;
+$hover-primary-text: darken(palette('classic', 'brand-01'), 15%) !default;
+$hover-danger: darken(palette('classic', 'support-01'), 10%) !default;
+$hover-secondary: palette('classic', 'brand-01') !default;
+$hover-row: rgba(palette('classic', 'brand-02'), 0.1) !default;
+
+// Global
+$input-border: 1px solid transparent !default;
+$input-label-weight: 600 !default;
+
+// Button Theme Variables
+$button-font-weight: 600 !default;
+$button-font-size: 0.875rem !default;
+$button-border-radius: 0 !default;
+$button-height: 40px !default;
+$button-padding: 0 $spacing-md !default;
+$button-padding-sm: 0 $spacing-xs !default;
+$button-border-width: 2px !default;
+
+// Accordion (Reverse)
+$accordion-flex-direction: row !default;
+$accordion-justify-content: flex-start !default;
+$accordion-arrow-margin: 0 0 0 $spacing-2xs !default;
+$accordion-title-margin: 0 0 0 $spacing-md !default;
+$accordion-content-padding: 0 $spacing-md 0 $spacing-2xl !default;
+
+// Card
+$card-text-align: center !default;
+$card-flex-align: center !default;
+
+// Checkbox
+$checkbox-border-width: 2px !default;
+
+// Code Snippet
+$snippet-background-color: palette('classic', 'ui-01 ') !default;
+$snippet-border-color: $ui-03 !default;
+
+// Content Switcher
+$content-switcher-border-radius: 8px !default;
+$content-switcher-option-border: 1px solid palette('classic', 'brand-01') !default;
+
+// Data Table
+$data-table-heading-transform: uppercase !default;
+$data-table-heading-border-bottom: 1px solid palette('classic', 'brand-01') !default;
+$data-table-row-height: 2rem !default;
+
+// Modal
+$modal-border-top: palette('classic', 'brand-01') 4px solid !default;
+$modal-footer-background-color: palette('classic', 'ui-02') !default;
+
+// Progress Indicator
+$progress-indicator-bar-width: 1px inset transparent !default;
+$progress-indicator-stroke-width: 5 !default;
+$progress-indicator-line-offset: 0.625rem !default;
+
+// Radio Button
+$radio-border-width: 2px !default;
+
+// Structured Theme Variables
+$structured-list-padding: 2rem !default;
+$structured-list-text-transform: none !default;
+
+// Skeleton Loading
+
+$skeleton: rgba(palette('classic', 'brand-01'), 0.1) !default; //old $field-01

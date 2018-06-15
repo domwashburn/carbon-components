@@ -12,7 +12,7 @@
     justify-content: space-between;
     height: rem(50px);
     line-height: 1.5;
-    background-color: $nav-02;
+    background-color: palette('classic', 'nav-02');
     z-index: 9000;
   }
 
@@ -47,15 +47,15 @@
     color: $color__blue-30; // anna
 
     .#{$prefix}--unified-header--apps & {
-      color: $nav-05;
+      color: palette('classic', 'nav-05');
     }
 
     .#{$prefix}--unified-header--infrastructure & {
-      color: $nav-07;
+      color: palette('classic', 'nav-07');
     }
 
     .#{$prefix}--unified-header--services & {
-      color: $nav-03;
+      color: palette('classic', 'nav-03');
     }
   }
 
@@ -87,7 +87,7 @@
     display: flex;
     align-items: center;
     padding-right: 1%;
-    background-color: $nav-02;
+    background-color: palette('classic', 'nav-02');
   }
 
   .#{$prefix}--global-header__menu {
@@ -126,7 +126,7 @@
     align-items: center;
     height: rem(50px);
     text-decoration: none;
-    background-color: $nav-02;
+    background-color: palette('classic', 'nav-02');
     color: $color__white; // anna
     padding: 0 1rem;
 

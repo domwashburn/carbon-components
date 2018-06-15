@@ -6,7 +6,7 @@
     @include font-family;
     display: flex;
     justify-content: space-between;
-    background-color: $nav-01;
+    background-color: palette('classic', 'nav-01');
     width: 100%;
     height: rem(36px);
     padding: 0 1rem;
@@ -30,15 +30,15 @@
     .#{$prefix}--dropdown {
       @include typescale('omega');
       list-style: none;
-      background-color: $nav-01;
-      color: $inverse-01;
+      background-color: palette('classic', 'nav-01');
+      color: palette('classic', 'inverse-01');
       height: 100%;
       display: flex;
       align-items: center;
     }
 
     .#{$prefix}--dropdown__arrow {
-      fill: $inverse-01;
+      fill: palette('classic', 'inverse-01');
       right: 0.75rem;
       width: rem(12px);
       height: rem(24px);
@@ -76,12 +76,12 @@
 
       &:hover {
         background-color: $color__blue-30; // anna
-        color: $text-01;
+        color: palette('classic', 'text-01');
       }
     }
 
     .#{$prefix}--dropdown-link {
-      color: $inverse-01;
+      color: palette('classic', 'inverse-01');
     }
   }
 
@@ -112,10 +112,10 @@
     @include font-smoothing;
     display: flex;
     justify-content: flex-start;
-    background-color: $nav-01;
+    background-color: palette('classic', 'nav-01');
     align-items: flex-start;
     text-decoration: none;
-    color: $inverse-01;
+    color: palette('classic', 'inverse-01');
     font-weight: 600;
     margin-right: 1rem;
 
@@ -132,7 +132,7 @@
   .#{$prefix}--top-nav__left-container__link--icon {
     width: 0.675rem;
     height: 0.7rem;
-    fill: $inverse-01;
+    fill: palette('classic', 'inverse-01');
     margin-right: 0.3rem;
   }
 
@@ -197,7 +197,7 @@
   .#{$prefix}--top-nav__right-container__item[data-credit] {
     .#{$prefix}--dropdown-text {
       padding: 0.75rem 2rem 0.75rem 1rem;
-      color: $inverse-01;
+      color: palette('classic', 'inverse-01');
     }
 
     .#{$prefix}--dropdown-list {
@@ -245,7 +245,7 @@
       &:hover {
         outline: 0;
         background-color: initial;
-        color: $inverse-01;
+        color: palette('classic', 'inverse-01');
       }
     }
 
@@ -321,7 +321,7 @@
 
       svg,
       img {
-        fill: $inverse-01;
+        fill: palette('classic', 'inverse-01');
         max-height: 1.5rem;
         max-width: 1.5rem;
       }
@@ -360,7 +360,7 @@
     max-height: 3rem;
     border-radius: 50%;
     width: 100%;
-    fill: $inverse-01;
+    fill: palette('classic', 'inverse-01');
   }
 
   .#{$prefix}--dropdown__profile-dropdown--information {

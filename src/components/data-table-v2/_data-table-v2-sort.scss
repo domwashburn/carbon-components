@@ -36,8 +36,8 @@
 
       svg {
         opacity: 1;
-        outline: 1px solid $brand-01;
-        fill: $brand-01;
+        outline: 1px solid palette('classic', 'brand-01');
+        fill: palette('classic', 'brand-01');
         outline-offset: -0.5px; // safari fix
       }
     }
@@ -49,7 +49,7 @@
     transition: transform 200ms $carbon--standard-easing;
     transform: rotate(0);
     opacity: 0;
-    fill: $ui-05;
+    fill: palette('classic', 'ui-05');
     height: rem(9px);
     padding: $spacing-3xs;
     width: auto;

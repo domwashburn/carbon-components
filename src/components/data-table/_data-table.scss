@@ -17,12 +17,12 @@
 
   .#{$prefix}--responsive-table {
     @include reset;
-    background-color: $ui-01;
+    background-color: palette('classic', 'ui-01');
     width: 100%;
     min-width: 500px;
     border-collapse: collapse;
     border-spacing: 0;
-    border: 2px solid $ui-03;
+    border: 2px solid palette('classic', 'ui-03');
 
     td {
       @include reset;
@@ -67,7 +67,7 @@
       @include reset;
       border-collapse: collapse;
       width: auto;
-      border: 2px solid $ui-03;
+      border: 2px solid palette('classic', 'ui-03');
 
       tr td:first-child,
       tr th:first-child {
@@ -108,17 +108,17 @@
   .#{$prefix}--table-body {
     > .#{$prefix}--parent-row,
     > .#{$prefix}--parent-row {
-      background-color: $ui-01;
+      background-color: palette('classic', 'ui-01');
 
       & + .#{$prefix}--expandable-row {
-        background-color: $ui-01;
+        background-color: palette('classic', 'ui-01');
       }
 
       &--even {
-        background-color: $ui-02;
+        background-color: palette('classic', 'ui-02');
 
         & + .#{$prefix}--expandable-row {
-          background-color: $ui-02;
+          background-color: palette('classic', 'ui-02');
         }
       }
     }
@@ -129,21 +129,21 @@
 
     &:first-child:hover,
     &:first-child:focus {
-      border-left: 2px solid $brand-02;
-      outline: 1px solid $brand-02;
+      border-left: 2px solid palette('classic', 'brand-02');
+      outline: 1px solid palette('classic', 'brand-02');
     }
 
     &:not(:first-child):hover,
     &:not(:first-child):focus {
-      border-left: 2px solid $brand-02;
-      outline: 1px solid $brand-02;
+      border-left: 2px solid palette('classic', 'brand-02');
+      outline: 1px solid palette('classic', 'brand-02');
     }
   }
 
   // expandable styles
   .#{$prefix}--expandable-row {
     > td {
-      border-left: 4px solid $brand-01;
+      border-left: 4px solid palette('classic', 'brand-01');
       padding: 2rem;
     }
 
@@ -170,7 +170,7 @@
   }
 
   .#{$prefix}--table-expand__svg {
-    fill: $ui-05;
+    fill: palette('classic', 'ui-05');
     transform: rotate(0deg);
     transition: transform 200ms $carbon--standard-easing;
     width: 12px;
@@ -193,7 +193,7 @@
   }
 
   .#{$prefix}--table-sort__svg {
-    fill: $ui-05;
+    fill: palette('classic', 'ui-05');
     width: 8px;
     height: 8px;
     transform: rotate(0deg);

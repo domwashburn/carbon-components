@@ -17,7 +17,7 @@
 
   .#{$prefix}--accordion__item {
     transition: all $transition--base $carbon--standard-easing;
-    border-top: 1px solid $ui-03;
+    border-top: 1px solid palette('classic', 'ui-03');
     overflow: hidden;
 
     &:focus {
@@ -31,13 +31,13 @@
     }
 
     &:last-child {
-      border-bottom: 1px solid $ui-03;
+      border-bottom: 1px solid palette('classic', 'ui-03');
     }
   }
 
   .#{$prefix}--accordion__heading {
     @include button-reset;
-    color: $text-01;
+    color: palette('classic', 'text-01');
     display: flex;
     align-items: center;
     justify-content: $accordion-justify-content;
@@ -64,7 +64,7 @@
     width: 1.25rem;
     padding: $spacing-2xs $spacing-3xs $spacing-2xs $spacing-2xs;
     margin: $accordion-arrow-margin;
-    fill: $ui-05;
+    fill: palette('classic', 'ui-05');
   }
 
   .#{$prefix}--accordion__title {
@@ -97,7 +97,7 @@
 
     .#{$prefix}--accordion__arrow {
       transform: rotate(90deg);
-      fill: $brand-01;
+      fill: palette('classic', 'brand-01');
     }
   }
 
@@ -109,7 +109,7 @@
 
   .#{$prefix}--accordion.#{$prefix}--skeleton .#{$prefix}--accordion__arrow {
     pointer-events: none;
-    fill: $ui-05;
+    fill: palette('classic', 'ui-05');
     cursor: default;
 
     &:hover,

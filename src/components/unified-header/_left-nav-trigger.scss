@@ -79,7 +79,7 @@
     span,
     span:before,
     span:after {
-      background: $nav-05;
+      background: palette('classic', 'nav-05');
     }
 
     &:focus {
@@ -88,7 +88,7 @@
 
     &:hover,
     &:focus {
-      background-color: $nav-06;
+      background-color: palette('classic', 'nav-06');
 
       span,
       span:before,
@@ -105,12 +105,12 @@
 
     span:before,
     span:after {
-      background: $nav-06;
+      background: palette('classic', 'nav-06');
     }
 
     &:hover,
     &:focus {
-      background-color: $nav-06;
+      background-color: palette('classic', 'nav-06');
 
       span:before,
       span:after {
@@ -123,7 +123,7 @@
     span,
     span:before,
     span:after {
-      background: $nav-03;
+      background: palette('classic', 'nav-03');
     }
 
     &:focus {
@@ -132,7 +132,7 @@
 
     &:hover,
     &:focus {
-      background-color: $nav-04;
+      background-color: palette('classic', 'nav-04');
 
       span,
       span:before,
@@ -149,12 +149,12 @@
 
     span:before,
     span:after {
-      background: $nav-04;
+      background: palette('classic', 'nav-04');
     }
 
     &:hover,
     &:focus {
-      background-color: $nav-04;
+      background-color: palette('classic', 'nav-04');
 
       span:before,
       span:after {
@@ -167,7 +167,7 @@
     span,
     span:before,
     span:after {
-      background: $nav-07;
+      background: palette('classic', 'nav-07');
     }
 
     &:focus {
@@ -176,7 +176,7 @@
 
     &:hover,
     &:focus {
-      background-color: $nav-08;
+      background-color: palette('classic', 'nav-08');
 
       span,
       span:before,
@@ -193,12 +193,12 @@
 
     span:before,
     span:after {
-      background: $nav-08;
+      background: palette('classic', 'nav-08');
     }
 
     &:hover,
     &:focus {
-      background-color: $nav-08;
+      background-color: palette('classic', 'nav-08');
 
       span:before,
       span:after {

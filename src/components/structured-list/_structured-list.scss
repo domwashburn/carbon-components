@@ -38,8 +38,8 @@
     background-color: transparent;
 
     &.#{$prefix}--structured-list--border {
-      border: 1px solid $ui-03;
-      background-color: $ui-01;
+      border: 1px solid palette('classic', 'ui-03');
+      background-color: palette('classic', 'ui-01');
     }
 
     &.#{$prefix}--structured-list--condensed .#{$prefix}--structured-list-td,
@@ -50,7 +50,7 @@
 
   .#{$prefix}--structured-list-row {
     display: table-row;
-    border-bottom: 1px solid $ui-03;
+    border-bottom: 1px solid palette('classic', 'ui-03');
     transition: $transition--base $carbon--standard-easing;
 
     .#{$prefix}--structured-list--selection &:hover:not(.#{$prefix}--structured-list-row--header-row) {
@@ -69,7 +69,7 @@
     }
 
     &.#{$prefix}--structured-list-row--header-row {
-      border-bottom: 2px solid $brand-01;
+      border-bottom: 2px solid palette('classic', 'brand-01');
       cursor: inherit;
     }
 
@@ -125,7 +125,7 @@
 
     .#{$prefix}--structured-list-input:checked + .#{$prefix}--structured-list-row &,
     .#{$prefix}--structured-list-input:checked + .#{$prefix}--structured-list-td & {
-      fill: $brand-02;
+      fill: palette('classic', 'brand-02');
     }
   }
 

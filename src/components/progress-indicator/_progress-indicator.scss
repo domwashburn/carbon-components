@@ -45,7 +45,7 @@
     height: 1.5rem;
     border-radius: 50%;
     margin-bottom: $spacing-xs;
-    fill: $brand-01;
+    fill: palette('classic', 'brand-01');
   }
 
   .#{$prefix}--progress-label {
@@ -55,55 +55,55 @@
 
   .#{$prefix}--progress-step--current {
     circle:first-child {
-      stroke: $brand-01;
+      stroke: palette('classic', 'brand-01');
       stroke-width: $progress-indicator-stroke-width;
       fill: transparent;
     }
 
     .#{$prefix}--progress-label {
       @include font-smoothing;
-      color: $brand-01;
+      color: palette('classic', 'brand-01');
       font-weight: 600;
     }
     .#{$prefix}--progress-line {
-      background-color: $brand-01;
+      background-color: palette('classic', 'brand-01');
     }
   }
 
   .#{$prefix}--progress-step--incomplete {
     circle {
-      stroke: $ui-04;
+      stroke: palette('classic', 'ui-04');
       stroke-width: $progress-indicator-stroke-width;
       fill: transparent;
     }
 
     .#{$prefix}--progress-label {
-      color: $text-02;
+      color: palette('classic', 'text-02');
     }
 
     .#{$prefix}--progress-line {
-      background-color: $ui-04;
+      background-color: palette('classic', 'ui-04');
     }
   }
 
   .#{$prefix}--progress-step--complete {
     circle {
-      stroke: $brand-01;
+      stroke: palette('classic', 'brand-01');
       stroke-width: $progress-indicator-stroke-width;
       fill: transparent;
     }
 
     polygon {
-      fill: $brand-01;
+      fill: palette('classic', 'brand-01');
     }
 
     .#{$prefix}--progress-label {
       @include font-smoothing;
-      color: $brand-01;
+      color: palette('classic', 'brand-01');
       font-weight: 600;
     }
     .#{$prefix}--progress-line {
-      background-color: $brand-01;
+      background-color: palette('classic', 'brand-01');
     }
   }
 

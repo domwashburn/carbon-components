@@ -24,8 +24,8 @@
     padding: 0 $spacing-xl;
     margin: 0;
     text-decoration: none;
-    border: 1px solid $brand-01;
-    color: $brand-01;
+    border: 1px solid palette('classic', 'brand-01');
+    color: palette('classic', 'brand-01');
 
     &:focus {
       outline: 1px solid transparent;
@@ -34,7 +34,7 @@
       z-index: 2;
       border-color: $hover-primary;
       text-decoration: underline;
-      color: $inverse-01;
+      color: palette('classic', 'inverse-01');
     }
 
     &:hover {
@@ -45,7 +45,7 @@
     &:active {
       background-color: $hover-primary;
       border-color: $hover-primary;
-      color: $inverse-01;
+      color: palette('classic', 'inverse-01');
     }
   }
 
@@ -99,8 +99,8 @@
   }
 
   .#{$prefix}--content-switcher-btn.#{$prefix}--content-switcher--selected {
-    background-color: $brand-01;
-    color: $inverse-01;
+    background-color: palette('classic', 'brand-01');
+    color: palette('classic', 'inverse-01');
     font-weight: 400;
     outline: 1px solid transparent;
 

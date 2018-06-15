@@ -28,7 +28,7 @@
     @include reset;
     @include typescale('zeta');
     @include line-height('body');
-    color: $text-02;
+    color: palette('classic', 'text-02');
     margin-bottom: $spacing-lg;
   }
 
@@ -44,8 +44,8 @@
     align-items: center;
     justify-content: space-between;
     min-height: rem(30px);
-    background-color: $field-02;
-    border: 1px solid $ui-03;
+    background-color: palette('classic', 'field-02');
+    border: 1px solid palette('classic', 'ui-03');
     padding: 0 $spacing-md;
     margin-bottom: $spacing-md;
 
@@ -59,7 +59,7 @@
     @include text-overflow(100%);
     display: inline-flex;
     align-items: center;
-    color: $text-01;
+    color: palette('classic', 'text-01');
     margin-right: $spacing-md;
     height: 1.875rem;
   }
@@ -75,7 +75,7 @@
     }
 
     .#{$prefix}--loading__svg {
-      stroke: $ui-05;
+      stroke: palette('classic', 'ui-05');
     }
   }
 
@@ -83,7 +83,7 @@
   .#{$prefix}--file__state-container .#{$prefix}--file-complete {
     width: 1rem;
     height: 1rem;
-    fill: $text-01;
+    fill: palette('classic', 'text-01');
     cursor: pointer;
 
     &:focus {
@@ -92,10 +92,10 @@
   }
 
   .#{$prefix}--file__state-container .#{$prefix}--file-close {
-    fill: $ui-05;
+    fill: palette('classic', 'ui-05');
   }
 
   .#{$prefix}--file__state-container .#{$prefix}--file-complete {
-    fill: $support-02;
+    fill: palette('classic', 'support-02');
   }
 }

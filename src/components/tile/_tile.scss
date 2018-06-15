@@ -17,8 +17,8 @@
     display: block;
     min-width: 8rem;
     min-height: 4rem;
-    background-color: $ui-01;
-    border: 1px solid $ui-02;
+    background-color: palette('classic', 'ui-01');
+    border: 1px solid palette('classic', 'ui-02');
     position: relative;
     padding: $spacing-md;
 
@@ -34,7 +34,7 @@
     cursor: pointer;
 
     &:hover {
-      border: 1px solid $ui-03;
+      border: 1px solid palette('classic', 'ui-03');
     }
 
     &:hover,
@@ -44,7 +44,7 @@
       }
 
       .#{$prefix}--tile__chevron svg {
-        fill: $brand-01;
+        fill: palette('classic', 'brand-01');
       }
     }
   }
@@ -62,12 +62,12 @@
 
   .#{$prefix}--tile--selectable:focus {
     outline: none;
-    border: 1px solid $brand-01;
+    border: 1px solid palette('classic', 'brand-01');
   }
 
   .#{$prefix}--tile--is-clicked {
     @include layer('flat');
-    border: 1px solid $ui-03;
+    border: 1px solid palette('classic', 'ui-03');
   }
 
   .#{$prefix}--tile__checkmark,
@@ -90,8 +90,8 @@
 
     svg {
       border-radius: 50%;
-      background-color: rgba($ui-01, 0.25);
-      fill: rgba($brand-01, 0.25);
+      background-color: rgba(palette('classic', 'ui-01'), 0.25);
+      fill: rgba(palette('classic', 'brand-01'), 0.25);
     }
   }
 
@@ -104,7 +104,7 @@
     svg {
       transform-origin: center;
       transition: $transition--base $carbon--standard-easing;
-      fill: $ui-05;
+      fill: palette('classic', 'ui-05');
     }
 
     &:hover {
@@ -145,7 +145,7 @@
   .#{$prefix}--tile--is-selected,
   .#{$prefix}--tile--is-selected:hover,
   .#{$prefix}--tile--is-selected:focus {
-    border: 1px solid $brand-01;
+    border: 1px solid palette('classic', 'brand-01');
     outline: none;
   }
 
@@ -155,8 +155,8 @@
     }
 
     & + .#{$prefix}--tile__checkmark svg {
-      fill: $brand-01;
-      background-color: $ui-01;
+      fill: palette('classic', 'brand-01');
+      background-color: palette('classic', 'ui-01');
     }
   }
 

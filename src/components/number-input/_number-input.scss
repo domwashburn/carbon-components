@@ -26,10 +26,10 @@
     padding-right: $spacing-xl;
     font-weight: 300;
     height: rem(40px);
-    color: $text-01;
-    background-color: $field-01;
+    color: palette('classic', 'text-01');
+    background-color: palette('classic', 'field-01');
     border: none;
-    box-shadow: 0 1px 0 0 $text-02;
+    box-shadow: 0 1px 0 0 palette('classic', 'text-02');
     order: 2;
     border-radius: 0;
 
@@ -39,11 +39,11 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 2px 0 0 $brand-01;
+      box-shadow: 0 2px 0 0 palette('classic', 'brand-01');
     }
 
     &:focus ~ .#{$prefix}--label {
-      color: $brand-01;
+      color: palette('classic', 'brand-01');
     }
 
     &:disabled {
@@ -59,7 +59,7 @@
 
     & ~ .#{$prefix}--form-requirement {
       order: 3;
-      color: $support-01;
+      color: palette('classic', 'support-01');
       font-weight: 400;
       margin-top: $spacing-2xs;
       overflow: visible;
@@ -119,7 +119,7 @@
   }
 
   .#{$prefix}--number__controls svg {
-    fill: $brand-01;
+    fill: palette('classic', 'brand-01');
 
     // Hover styles for use with old HTML w/o button
     &:hover {
@@ -137,11 +137,11 @@
     input[type='number'],
     input[type='number']:focus {
       outline: none;
-      box-shadow: 0 2px 0px 0px $support-01;
+      box-shadow: 0 2px 0px 0px palette('classic', 'support-01');
     }
 
     input[type='number']:focus ~ .#{$prefix}--label {
-      color: $support-01;
+      color: palette('classic', 'support-01');
     }
 
     .#{$prefix}--number__controls {
@@ -150,7 +150,7 @@
   }
 
   .#{$prefix}--number--light input[type='number'] {
-    background: $field-02;
+    background: palette('classic', 'field-02');
   }
 
   // Skeleton State

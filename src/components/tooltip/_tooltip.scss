@@ -19,7 +19,7 @@
     @include typescale('epsilon');
     display: inline-flex;
     align-items: center;
-    color: $text-01;
+    color: palette('classic', 'text-01');
     font-weight: normal;
   }
 
@@ -39,12 +39,12 @@
     path,
     polygon,
     circle {
-      fill: $brand-01;
+      fill: palette('classic', 'brand-01');
     }
 
     &:hover,
     &:focus {
-      color: $text-01;
+      color: palette('classic', 'text-01');
       path,
       polygon,
       circle {
@@ -63,9 +63,9 @@
     position: absolute;
     display: none;
     max-width: rem(240px);
-    background: $ui-01;
+    background: palette('classic', 'ui-01');
     padding: $spacing-md;
-    border: 1px solid $ui-03;
+    border: 1px solid palette('classic', 'ui-03');
     border-radius: rem(4px);
     z-index: z('floating');
     word-wrap: break-word;
@@ -84,15 +84,15 @@
 
     .#{$prefix}--tooltip__caret {
       position: absolute;
-      background: $ui-01;
+      background: palette('classic', 'ui-01');
       left: 0;
       top: rem(-5px);
       right: 0;
       transform: rotate(-135deg);
       width: 0.6rem;
       height: 0.6rem;
-      border-right: 1px solid $ui-03;
-      border-bottom: 1px solid $ui-03;
+      border-right: 1px solid palette('classic', 'ui-03');
+      border-bottom: 1px solid palette('classic', 'ui-03');
       margin: 0 auto;
       content: '';
     }
@@ -140,7 +140,7 @@
     .#{$prefix}--tooltip__trigger {
       display: inline-flex;
       position: relative;
-      border-bottom: 2px dotted $ui-04;
+      border-bottom: 2px dotted palette('classic', 'ui-04');
 
       &:hover {
         border-bottom: 2px dotted $hover-primary;
@@ -169,7 +169,7 @@
     position: absolute;
     z-index: 1;
     display: none;
-    background: $inverse-02;
+    background: palette('classic', 'inverse-02');
     max-width: rem(176px);
     margin-top: $spacing-sm;
     padding: $spacing-xs;
@@ -180,7 +180,7 @@
     p {
       @include font-family;
       @include typescale('omega');
-      color: $inverse-01;
+      color: palette('classic', 'inverse-01');
     }
 
     .#{$prefix}--tooltip__caret {
@@ -189,7 +189,7 @@
       left: 0;
       width: 0.6rem;
       height: 0.6rem;
-      background: $inverse-02;
+      background: palette('classic', 'inverse-02');
       margin-left: $spacing-lg;
     }
   }
@@ -226,7 +226,7 @@
     overflow: visible;
 
     path {
-      fill: $brand-01;
+      fill: palette('classic', 'brand-01');
     }
 
     // Tooltip - renders as a combo of :before and :after elements
@@ -235,7 +235,7 @@
       @include font-family;
       position: absolute;
       display: none;
-      background-color: $inverse-02;
+      background-color: palette('classic', 'inverse-02');
     }
 
     &:before {
@@ -245,7 +245,7 @@
       margin-left: 50%;
       padding: $spacing-2xs;
       border-radius: 4px;
-      color: $inverse-01;
+      color: palette('classic', 'inverse-01');
       font-weight: 400;
       content: attr(aria-label);
       transform: translateX(-50%);

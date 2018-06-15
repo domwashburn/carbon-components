@@ -34,16 +34,16 @@
   // Reset hover styles while editing
   .#{$prefix}--data-table--editing tr:hover td {
     background-color: inherit;
-    border-top: 1px solid $ui-04;
-    border-bottom: 1px solid $ui-04;
+    border-top: 1px solid palette('classic', 'ui-04');
+    border-bottom: 1px solid palette('classic', 'ui-04');
   }
 
   .#{$prefix}--data-table--editing tr:hover td:first-of-type {
-    border-left: 1px solid $ui-04;
+    border-left: 1px solid palette('classic', 'ui-04');
   }
 
   .#{$prefix}--data-table--editing tr:hover td:last-of-type {
-    border-right: 1px solid $ui-04;
+    border-right: 1px solid palette('classic', 'ui-04');
   }
 
   //----------------------------------------------------------------------------
@@ -112,15 +112,15 @@
   }
 
   .#{$prefix}--data-table-cell__icon--edit {
-    fill: $ui-05;
+    fill: palette('classic', 'ui-05');
   }
 
   .#{$prefix}--data-table-cell__edit:active > .#{$prefix}--data-table-cell__icon--edit {
-    fill: $brand-01;
+    fill: palette('classic', 'brand-01');
   }
 
   .#{$prefix}--data-table-cell__edit:focus {
-    outline: 1px solid $brand-01;
+    outline: 1px solid palette('classic', 'brand-01');
     outline-offset: 2px;
   }
 
@@ -188,7 +188,7 @@
     right: 0;
     bottom: 0;
     height: $size--edit-actions--height;
-    background-color: $inverse-01;
+    background-color: palette('classic', 'inverse-01');
     padding: $spacing--cell-actions;
     z-index: z('overlay');
   }
@@ -238,7 +238,7 @@
 
   // Status - Success ----------------------------------------------------------
   .#{$prefix}--data-table__icon--success {
-    fill: $support-02;
+    fill: palette('classic', 'support-02');
   }
 
   // Status - Error ------------------------------------------------------------
@@ -247,13 +247,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    fill: $support-01;
+    fill: palette('classic', 'support-01');
     width: 100%;
     height: 100%;
   }
 
   .#{$prefix}--data-table__edit-field--error {
-    border-bottom: 2px solid $support-01;
+    border-bottom: 2px solid palette('classic', 'support-01');
   }
 
   .#{$prefix}--data-table__status--error {
@@ -266,13 +266,13 @@
     position: absolute;
     top: rem(-1px);
     right: -1rem;
-    color: $support-01;
+    color: palette('classic', 'support-01');
     // TODO: sync with caption sizes
     font-size: rem(12px);
-    background-color: $inverse-01;
+    background-color: palette('classic', 'inverse-01');
     padding: 1rem;
     transform: translateY(-100%);
-    border: 1px solid $ui-03;
+    border: 1px solid palette('classic', 'ui-03');
     z-index: 1000;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -287,8 +287,8 @@
     bottom: -7px;
     width: rem(10px);
     height: rem(10px);
-    background-color: $inverse-01;
-    border: 1px solid $ui-03;
+    background-color: palette('classic', 'inverse-01');
+    border: 1px solid palette('classic', 'ui-03');
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     transform: rotate(45deg);
@@ -306,12 +306,12 @@
   }
 
   .#{$prefix}--data-table__status--error:focus .#{$prefix}--data-table__error-text {
-    box-shadow: 0 0 0 1px $brand-01;
+    box-shadow: 0 0 0 1px palette('classic', 'brand-01');
   }
 
   .#{$prefix}--data-table__status--error:focus .#{$prefix}--data-table__error-text::after {
-    border-right-color: $brand-01;
-    border-bottom-color: $brand-01;
+    border-right-color: palette('classic', 'brand-01');
+    border-bottom-color: palette('classic', 'brand-01');
   }
 
   // Visually show the error message
