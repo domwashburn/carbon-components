@@ -1,4 +1,4 @@
-@import '../../globals/scss/import-once';
+@import '../../globals/scss-experimental/import-once';
 
 @include exports('data-table-v2-action') {
   .#{$prefix}--table-toolbar {

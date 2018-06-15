@@ -2,11 +2,11 @@
 // ComboBox
 //-----------------------------
 
-@import '../../globals/scss/colors';
-@import '../../globals/scss/css--helpers';
-@import '../../globals/scss/layout';
-@import '../../globals/scss/import-once';
-@import '../../globals/scss/vars';
+@import '../../globals/scss-experimental/colors';
+@import '../../globals/scss-experimental/css--helpers';
+@import '../../globals/scss-experimental/layout';
+@import '../../globals/scss-experimental/import-once';
+@import '../../globals/scss-experimental/vars';
 @import '../list-box/list-box';
 
 @include exports('combo-box') {

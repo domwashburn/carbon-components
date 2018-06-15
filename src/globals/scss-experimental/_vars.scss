@@ -1,0 +1,305 @@
+@import 'colors';
+@import 'spacing';
+
+$prefix: 'bx' !default;
+
+$carbon--ease-in: cubic-bezier(0.25, 0, 1, 1); // Used primarily for removing elements from the screen.
+$carbon--ease-out: cubic-bezier(
+  0,
+  0,
+  0.25,
+  1
+); // Used for adding elements to the screen or changing on-screen states at a users's input.
+$carbon--standard-easing: cubic-bezier(0.5, 0, 0.1, 1); // Used for the majority of animations.
+
+// For back-ward compatibility
+$bx--ease-in: $carbon--ease-in;
+$bx--ease-out: $carbon--ease-out;
+$bx--standard-easing: $carbon--standard-easing;
+
+$transition--base: 250ms;
+$transition--expansion: 300ms;
+
+// Color Theme Variables (left intact for backwards compatibility)
+$brand-01: $color__blue-51 !default;
+$brand-02: $color__blue-40 !default;
+$brand-03: $color__teal-20 !default;
+$inverse-01: $color__white !default;
+$inverse-02: #272d33 !default;
+$ui-01: $color__white !default;
+$ui-02: #f4f7fb !default;
+$ui-03: $color__gray-1 !default;
+$ui-04: #8897a2 !default;
+$ui-05: $color__navy-gray-6 !default;
+$text-01: $color__blue-90 !default;
+$text-02: $color__navy-gray-6 !default;
+$text-03: #cdd1d4 !default;
+$field-01: #f4f7fb !default;
+$field-02: $color__white !default;
+$support-01: #e0182d !default;
+$support-02: $color__green-40 !default;
+$support-03: $color__yellow-30 !default;
+$support-04: $color__blue-30 !default;
+$nav-01: $color__navy-gray-1 !default;
+$nav-02: $color__blue-90 !default;
+$nav-03: $color__purple-30 !default;
+$nav-04: $color__purple-60 !default;
+$nav-05: $color__teal-40 !default;
+$nav-06: $color__teal-50 !default;
+$nav-07: $color__blue-30 !default;
+$nav-08: $color__blue-51 !default;
+
+$hover-primary: darken($brand-01, 10%) !default;
+$hover-primary-text: darken($brand-01, 15%) !default;
+$hover-danger: darken($support-01, 10%) !default;
+$hover-secondary: $brand-01 !default;
+$hover-row: rgba($brand-02, 0.1) !default;
+
+// Global
+$input-border: 1px solid transparent !default;
+$input-label-weight: 600 !default;
+
+// Button Theme Variables
+$button-font-weight: 600 !default;
+$button-font-size: 0.875rem !default;
+$button-border-radius: 0 !default;
+$button-height: 40px !default;
+$button-padding: 0 $spacing-md !default;
+$button-padding-sm: 0 $spacing-xs !default;
+$button-border-width: 2px !default;
+
+// Accordion (Reverse)
+$accordion-flex-direction: row !default;
+$accordion-justify-content: flex-start !default;
+$accordion-arrow-margin: 0 0 0 $spacing-2xs !default;
+$accordion-title-margin: 0 0 0 $spacing-md !default;
+$accordion-content-padding: 0 $spacing-md 0 $spacing-2xl !default;
+
+// Card
+$card-text-align: center !default;
+$card-flex-align: center !default;
+
+// Checkbox
+$checkbox-border-width: 2px !default;
+
+// Code Snippet
+$snippet-background-color: $ui-01 !default;
+$snippet-border-color: $ui-03 !default;
+
+// Content Switcher
+$content-switcher-border-radius: 8px !default;
+$content-switcher-option-border: 1px solid $brand-01 !default;
+
+// Data Table
+$data-table-heading-transform: uppercase !default;
+$data-table-heading-border-bottom: 1px solid $brand-01 !default;
+$data-table-row-height: 2rem !default;
+
+// Modal
+$modal-border-top: $brand-01 4px solid !default;
+$modal-footer-background-color: $ui-02 !default;
+
+// Progress Indicator
+$progress-indicator-bar-width: 1px inset transparent !default;
+$progress-indicator-stroke-width: 5 !default;
+$progress-indicator-line-offset: 0.625rem !default;
+
+// Radio Button
+$radio-border-width: 2px !default;
+
+// Structured Theme Variables
+$structured-list-padding: 2rem !default;
+$structured-list-text-transform: none !default;
+
+// Skeleton Loading
+
+$skeleton: rgba($color__blue-51, 0.1) !default; //old $field-01
+
+// ------------------//
+//  Theme Variables  //
+// ------------------//
+
+// Retaining existing color variables above to hopefully avoid breaking anything too much...
+// Creating color theme variables and maps below
+// Using variables inside the theme maps to allow developers to override themes without
+// new color variables have been given abstract names to clearly convey the colors use rather than the color itself
+
+// TODO: map color variables to a light theme
+
+// Light Color Theme Variables
+$light-ui__brand-01: maroon !default;
+$light-ui__brand-02: $brand-02 !default;
+$light-ui__brand-03: $brand-03 !default;
+$light-ui__inverse-01: $inverse-01 !default; // inverse of what?
+$light-ui__inverse-02: $inverse-02 !default; // inverse of what?
+$light-ui__ui-01: $ui-01 !default;
+$light-ui__ui-02: $ui-02 !default;
+$light-ui__ui-03: $ui-03 !default;
+$light-ui__ui-04: $ui-04 !default;
+$light-ui__ui-05: $ui-05 !default;
+$light-ui__text-01: $text-01 !default;
+$light-ui__text-02: $text-02 !default;
+$light-ui__text-03: $text-03 !default;
+$light-ui__field-01: $field-01 !default;
+$light-ui__field-02: $field-02 !default;
+$light-ui__support-01: $support-01 !default;
+$light-ui__support-02: $support-02 !default;
+$light-ui__support-03: $support-03 !default;
+$light-ui__support-04: $support-04 !default;
+$light-ui__nav-01: $nav-01 !default;
+$light-ui__nav-02: $nav-02 !default;
+$light-ui__nav-03: $nav-03 !default;
+$light-ui__nav-04: $nav-04 !default;
+$light-ui__nav-05: $nav-05 !default;
+$light-ui__nav-06: $nav-06 !default;
+$light-ui__nav-07: $nav-07 !default;
+$light-ui__nav-08: $nav-08 !default;
+
+// Dark Color Theme Variables
+$dark-ui__brand-01: $brand-01 !default;
+$dark-ui__brand-02: $brand-02 !default;
+$dark-ui__brand-03: $brand-03 !default;
+$dark-ui__inverse-01: $inverse-01 !default; // inverse of what?
+$dark-ui__inverse-02: $inverse-02 !default; // inverse of what?
+$dark-ui__ui-01: $ui-01 !default;
+$dark-ui__ui-02: $ui-02 !default;
+$dark-ui__ui-03: $ui-03 !default;
+$dark-ui__ui-04: $ui-04 !default;
+$dark-ui__ui-05: $ui-05 !default;
+$dark-ui__text-01: $text-01 !default;
+$dark-ui__text-02: $text-02 !default;
+$dark-ui__text-03: $text-03 !default;
+$dark-ui__field-01: $field-01 !default;
+$dark-ui__field-02: $field-02 !default;
+$dark-ui__support-01: $support-01 !default;
+$dark-ui__support-02: $support-02 !default;
+$dark-ui__support-03: $support-03 !default;
+$dark-ui__support-04: $support-04 !default;
+$dark-ui__nav-01: $nav-01 !default;
+$dark-ui__nav-02: $nav-02 !default;
+$dark-ui__nav-03: $nav-03 !default;
+$dark-ui__nav-04: $nav-04 !default;
+$dark-ui__nav-05: $nav-05 !default;
+$dark-ui__nav-06: $nav-06 !default;
+$dark-ui__nav-07: $nav-07 !default;
+$dark-ui__nav-08: $nav-08 !default;
+
+// Maps
+
+$__palette: (
+	// literal mapping of existing carbon color theme to a map
+  'classic': (
+    'brand-01': $light-ui__brand-01,
+    'brand-02': $light-ui__brand-02,
+    'brand-03': $light-ui__brand-03,
+    'inverse-01': $light-ui__inverse-01,
+    'inverse-02': $light-ui__inverse-02,
+    'ui-01': $light-ui__ui-01,
+    'ui-02': $light-ui__ui-02,
+    'ui-03': $light-ui__ui-03,
+    'ui-04': $light-ui__ui-04,
+    'ui-05': $light-ui__ui-05,
+    'text-01': $light-ui__text-01,
+    'text-02': $light-ui__text-02,
+    'text-03': $light-ui__text-03,
+    'field-01': $light-ui__field-01,
+    'field-02': $light-ui__field-02,
+    'support-01': $light-ui__support-01,
+    'support-02': $light-ui__support-02,
+    'support-03': $light-ui__support-03,
+    'support-04': $light-ui__support-04,
+    'nav-01': $light-ui__nav-01,
+    'nav-02': $light-ui__nav-02,
+    'nav-03': $light-ui__nav-03,
+    'nav-04': $light-ui__nav-04,
+    'nav-05': $light-ui__nav-05,
+    'nav-06': $light-ui__nav-06,
+    'nav-07': $light-ui__nav-07,
+    'nav-08': $light-ui__nav-08,
+  ),
+
+  // colors that are used across both themes
+	'ui': (
+		'clear': transparent,
+		'base-01': #eaeaea, // Color: Gray 1
+		'base-02': #d8d8d8, // Color: Gray 10
+		'base-03': #c0bfc0, // Color: Gray 20
+		'base-04': #a6a5a6, // Color: Gray 30
+		'base-05': #949394, // Color: Gray 40
+		'base-06': #777677, // Color: Gray 50
+		'base-07': #595859, // Color: Gray 60
+		'base-08': #464646, // Color: Gray 70
+		'base-09': #343334, // Color: Gray 80
+		'base-10': #272727, // Color: Gray 90
+		'base-11': #000000, // Color: Black
+		'white-01': #ffffff, // Color: White
+		'white-02': #f9f9f9, // Color: Neutral White 2
+		'white-03': #f6f6f6, // Color: Neutral White 3
+		'accent-01': #6b7184, // Color: Slate Blue
+		'accent-02': #00b6cb, // Color: Aqua 30
+  ),
+	// theme map with identical keys for light theme
+	// 'light': (
+  //   
+  // ),
+	// 'dark': (
+  //   
+  // ),
+	'light': (
+		// Background Colors
+    'bg-light': #ffffff, // Color: White
+		'bg-medium': #f9f9f9, // Color: Neutral White 2
+		'bg-dark': #f3f3f3, // Color: Neutral White 4
+		// Text Colors
+		'text-01': #595859, // Color: Gray 60
+		'text-02': #1d364d, // Remove
+		'text-03': #595859, // Remove
+    // Divider Color
+    'divider': #eaeaea, // Color: Gray 1
+		// Active Colors
+		'active': #a91560, // Color: Magenta 60
+		'focus-light': #dc267f, // Color: Magenta 50
+		'focus-dark': #831b4c, // Color: Magenta 70
+		'focus-neutral': rgba(#d8d8d8, 0.3), // Color: Gray 30 at 30%
+		'focus-a11y': rgba(#047cc0, .75), // TO DO: Replace with `focus-highlight`
+		'focus-highlight': rgba(#00b6cb, .75), // Color: Aqua 30
+		'disabled': #a6a5a6, // Color: Gray 30
+		// Status Colors
+		'status-info': $dark-ui__support-04, // Color: Blue 50
+		'status-success': $dark-ui__support-02, // Color: Green 50
+		'status-warn': $dark-ui__support-03, // Color: Yellow 10
+		'status-error': $dark-ui__support-01, // Color: Red 50
+	),
+
+	// theme map with identical keys for dark theme
+	'dark': (
+		// dark theme background tints
+		'bg-light': #464646, // Color: Gray 70
+		'bg-medium': #585758, // Color: ???
+		'bg-dark': #343334, // Color: Gray 80
+		// Text Colors
+		'text-01': #eaeaea, // Color: Gray 1
+		'text-02': #c0bfc0, // Remove
+		'text-03': #a6a5a6, // Remove
+		// Divider Color
+		'divider': #272727, // Color: Gray 90
+    // Active Colors
+		'active': #40d5bb, // Color: Teal 20
+		//TO DO: Update focus to read active, and reserve focus for the highlight, explore hover highlight colors
+		'focus-light': #8ee9d4, // Color: Teal 10 
+		'focus-dark': #00baa1, // Color: Teal 30
+		'focus-neutral': rgba(#000000, 0.3), // Color: Black at 30%
+		'focus-a11y': rgba(#95c4f3, .75), // TO DO: Replace with `focus-highlight`
+		'focus-highlight': rgba(#00b6cb, .75), // Color: Aqua 30
+		'disabled': #777677, // Color: Gray 50
+    // Status Colors
+		'status-info': #2d74da, // Color: Blue 50
+		'status-success': #00884b, // Color: Green 50
+		'status-warn': #fed500, // Color: Yellow 10
+		'status-error': #e62325, // Color: Red 50
+    )
+);
+
+@function palette($palette, $color) {
+  @return map-get(map-get($__palette-v2, $palette), $color);
+}

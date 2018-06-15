@@ -1,11 +1,11 @@
-@import '../../globals/scss/vars';
-@import '../../globals/scss/colors';
-@import '../../globals/scss/typography';
-@import '../../globals/scss/spacing';
-@import '../../globals/scss/helper-mixins';
-@import '../../globals/scss/import-once';
-@import '../../globals/scss/helper-mixins';
-@import '../../globals/scss/css--reset';
+@import '../../globals/scss-experimental/vars';
+@import '../../globals/scss-experimental/colors';
+@import '../../globals/scss-experimental/typography';
+@import '../../globals/scss-experimental/spacing';
+@import '../../globals/scss-experimental/helper-mixins';
+@import '../../globals/scss-experimental/import-once';
+@import '../../globals/scss-experimental/helper-mixins';
+@import '../../globals/scss-experimental/css--reset';
 @import 'mixins';
 
 @include exports('snippet') {

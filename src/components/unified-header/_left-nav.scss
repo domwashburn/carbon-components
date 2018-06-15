@@ -1,4 +1,4 @@
-@import '../../globals/scss/import-once';
+@import '../../globals/scss-experimental/import-once';
 
 @include exports('left-nav') {
   .#{$prefix}--global-header__left-nav {

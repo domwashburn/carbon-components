@@ -1,7 +1,7 @@
-@import '../../globals/scss/helper-mixins';
-@import '../../globals/scss/import-once';
-@import '../../globals/scss/layer';
-@import '../../globals/scss/layout';
+@import '../../globals/scss-experimental/helper-mixins';
+@import '../../globals/scss-experimental/import-once';
+@import '../../globals/scss-experimental/layer';
+@import '../../globals/scss-experimental/layout';
 
 @mixin assistive-text {
   position: absolute;
