@@ -45,7 +45,7 @@
     height: 1.5rem;
     border-radius: 50%;
     margin-bottom: $spacing-xs;
-    fill: palette('classic', 'brand-01');
+    fill: palette('primary', 'brand-01');
   }
 
   .#{$prefix}--progress-label {
@@ -55,55 +55,55 @@
 
   .#{$prefix}--progress-step--current {
     circle:first-child {
-      stroke: palette('classic', 'brand-01');
+      stroke: palette('primary', 'brand-01');
       stroke-width: $progress-indicator-stroke-width;
       fill: transparent;
     }
 
     .#{$prefix}--progress-label {
       @include font-smoothing;
-      color: palette('classic', 'brand-01');
+      color: palette('primary', 'brand-01');
       font-weight: 600;
     }
     .#{$prefix}--progress-line {
-      background-color: palette('classic', 'brand-01');
+      background-color: palette('primary', 'brand-01');
     }
   }
 
   .#{$prefix}--progress-step--incomplete {
     circle {
-      stroke: palette('classic', 'ui-04');
+      stroke: palette('primary', 'ui-04');
       stroke-width: $progress-indicator-stroke-width;
       fill: transparent;
     }
 
     .#{$prefix}--progress-label {
-      color: palette('classic', 'text-02');
+      color: palette('primary', 'text-02');
     }
 
     .#{$prefix}--progress-line {
-      background-color: palette('classic', 'ui-04');
+      background-color: palette('primary', 'ui-04');
     }
   }
 
   .#{$prefix}--progress-step--complete {
     circle {
-      stroke: palette('classic', 'brand-01');
+      stroke: palette('primary', 'brand-01');
       stroke-width: $progress-indicator-stroke-width;
       fill: transparent;
     }
 
     polygon {
-      fill: palette('classic', 'brand-01');
+      fill: palette('primary', 'brand-01');
     }
 
     .#{$prefix}--progress-label {
       @include font-smoothing;
-      color: palette('classic', 'brand-01');
+      color: palette('primary', 'brand-01');
       font-weight: 600;
     }
     .#{$prefix}--progress-line {
-      background-color: palette('classic', 'brand-01');
+      background-color: palette('primary', 'brand-01');
     }
   }
 

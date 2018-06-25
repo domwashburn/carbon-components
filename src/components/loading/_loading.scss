@@ -19,7 +19,7 @@ $loading__size: 10.5rem;
   // Animation (Spin by default)
   .#{$prefix}--loading__svg {
     fill: transparent;
-    stroke: palette('classic', 'brand-03');
+    stroke: palette('primary', 'brand-03');
     stroke-width: 7;
     stroke-linecap: butt;
     stroke-dasharray: 240;
@@ -35,7 +35,7 @@ $loading__size: 10.5rem;
     height: 2rem;
 
     .#{$prefix}--loading__svg {
-      stroke: palette('classic', 'ui-05');
+      stroke: palette('primary', 'ui-05');
     }
   }
 
@@ -45,7 +45,7 @@ $loading__size: 10.5rem;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(palette('classic', 'ui-01'), 0.6);
+    background-color: rgba(palette('primary', 'ui-01'), 0.6);
     display: flex;
     justify-content: center;
     align-items: center;

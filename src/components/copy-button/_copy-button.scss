@@ -32,7 +32,7 @@
       @include typescale('omega');
       top: 1.1rem;
       padding: $spacing-2xs;
-      color: palette('classic', 'inverse-01');
+      color: palette('primary', 'inverse-01');
       content: attr(data-feedback);
       transform: translateX(-50%);
       white-space: nowrap;
@@ -47,8 +47,8 @@
       width: 0.6rem;
       height: 0.6rem;
       left: -0.3rem;
-      border-right: 1px solid palette('classic', 'inverse-02');
-      border-bottom: 1px solid palette('classic', 'inverse-02');
+      border-right: 1px solid palette('primary', 'inverse-02');
+      border-bottom: 1px solid palette('primary', 'inverse-02');
       content: '';
       transform: rotate(-135deg);
       z-index: 1;
@@ -58,7 +58,7 @@
     &:after {
       position: absolute;
       display: block;
-      background: palette('classic', 'inverse-02');
+      background: palette('primary', 'inverse-02');
     }
 
     &--displayed {

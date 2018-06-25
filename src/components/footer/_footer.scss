@@ -23,8 +23,8 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  border-top: 2px solid palette('classic', 'brand-01');
-  background-color: palette('classic', 'ui-01');
+  border-top: 2px solid palette('primary', 'brand-01');
+  background-color: palette('primary', 'ui-01');
   min-height: 3.5rem;
   z-index: z('footer');
   padding: rem(20px) 5%;

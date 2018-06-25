@@ -17,7 +17,7 @@
         left: 0;
         height: 100%;
         width: 2px;
-        background-color: palette('classic', 'brand-01');
+        background-color: palette('primary', 'brand-01');
       }
     }
 
@@ -38,7 +38,7 @@
       }
 
       > td:last-of-type {
-        border-right: 1px solid palette('classic', 'brand-01');
+        border-right: 1px solid palette('primary', 'brand-01');
       }
 
       &[data-parent-row] > td {
@@ -48,8 +48,8 @@
       + tr[data-child-row] {
         > td {
           background-color: $hover-row;
-          border-bottom: 1px solid palette('classic', 'brand-01');
-          border-right: 1px solid palette('classic', 'brand-01');
+          border-bottom: 1px solid palette('primary', 'brand-01');
+          border-right: 1px solid palette('primary', 'brand-01');
         }
       }
     }
@@ -58,11 +58,11 @@
   tr.#{$prefix}--expandable-row--hover-v2 {
     > td {
       background-color: $hover-row;
-      border-top: 1px solid palette('classic', 'brand-01');
+      border-top: 1px solid palette('primary', 'brand-01');
     }
 
     > td:last-of-type {
-      border-right: 1px solid palette('classic', 'brand-01');
+      border-right: 1px solid palette('primary', 'brand-01');
     }
   }
 
@@ -78,13 +78,13 @@
       outline: 1px solid transparent;
 
       svg {
-        box-shadow: inset 0px 0px 0px 1px palette('classic', 'brand-01');
+        box-shadow: inset 0px 0px 0px 1px palette('primary', 'brand-01');
       }
     }
   }
 
   .#{$prefix}--table-expand-v2__svg {
-    fill: palette('classic', 'ui-05');
+    fill: palette('primary', 'ui-05');
     transform: rotate(0deg);
     transition: transform 200ms $carbon--standard-easing;
     height: 16px;

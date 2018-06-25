@@ -33,9 +33,9 @@
 
   .#{$prefix}--radio-button__appearance {
     @include reset;
-    background-color: palette('classic', 'inverse-01');
+    background-color: palette('primary', 'inverse-01');
     border-radius: 50%;
-    border: $radio-border-width solid palette('classic', 'ui-05');
+    border: $radio-border-width solid palette('primary', 'ui-05');
     flex-shrink: 0;
     height: rem(18px);
     width: rem(18px);
@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-color: palette('classic', 'brand-01');
+    border-color: palette('primary', 'brand-01');
 
     &:before {
       content: '';
@@ -55,7 +55,7 @@
       width: 0.5rem;
       height: 0.5rem;
       border-radius: 50%;
-      background-color: palette('classic', 'brand-01');
+      background-color: palette('primary', 'brand-01');
     }
   }
 

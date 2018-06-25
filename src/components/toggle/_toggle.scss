@@ -36,7 +36,7 @@
       width: 100%;
       height: rem(4px);
       top: -2px;
-      background-color: palette('classic', 'ui-04');
+      background-color: palette('primary', 'ui-04');
       transition: $transition--base $carbon--standard-easing;
       cursor: pointer;
     }
@@ -45,12 +45,12 @@
       box-sizing: border-box;
       position: absolute;
       display: block;
-      border: 2px solid palette('classic', 'ui-04');
+      border: 2px solid palette('primary', 'ui-04');
       cursor: pointer;
       top: -12px;
       width: rem(24px);
       height: rem(24px);
-      background-color: palette('classic', 'ui-01');
+      background-color: palette('primary', 'ui-01');
       border-radius: 50%;
       content: '';
       transition: $transition--base $carbon--standard-easing;
@@ -71,14 +71,14 @@
       width: rem(32px);
       border-radius: 0.9375rem;
       background-color: transparent;
-      border: 2px solid palette('classic', 'ui-04');
+      border: 2px solid palette('primary', 'ui-04');
       top: 0;
     }
 
     &:after {
       width: rem(10px);
       height: rem(10px);
-      background-color: palette('classic', 'ui-04');
+      background-color: palette('primary', 'ui-04');
       border: none;
       top: 3px;
       left: 3px;
@@ -86,7 +86,7 @@
   }
 
   .#{$prefix}--toggle__check {
-    fill: palette('classic', 'ui-05');
+    fill: palette('primary', 'ui-05');
     position: absolute;
     left: 6px;
     top: 6px;
@@ -96,7 +96,7 @@
   }
 
   .#{$prefix}--toggle--small:checked + .#{$prefix}--toggle__label .#{$prefix}--toggle__check {
-    fill: palette('classic', 'brand-01');
+    fill: palette('primary', 'brand-01');
     transform: scale(1) translateX(16px);
   }
 
@@ -116,26 +116,26 @@
 
   .#{$prefix}--toggle:checked + .#{$prefix}--toggle__label .#{$prefix}--toggle__appearance {
     &:before {
-      background-color: palette('classic', 'brand-01');
+      background-color: palette('primary', 'brand-01');
     }
 
     &:after {
       transform: translateX(24px);
-      background-color: palette('classic', 'brand-01');
+      background-color: palette('primary', 'brand-01');
       box-shadow: none;
-      border-color: palette('classic', 'brand-01');
+      border-color: palette('primary', 'brand-01');
     }
   }
 
   .#{$prefix}--toggle--small:checked + .#{$prefix}--toggle__label .#{$prefix}--toggle__appearance {
     &:before {
-      background-color: palette('classic', 'brand-01');
-      border-color: palette('classic', 'brand-01');
+      background-color: palette('primary', 'brand-01');
+      border-color: palette('primary', 'brand-01');
     }
 
     &:after {
-      background-color: palette('classic', 'ui-01');
-      border-color: palette('classic', 'ui-01');
+      background-color: palette('primary', 'ui-01');
+      border-color: palette('primary', 'ui-01');
       margin-left: 0px;
       transform: translateX(17px);
     }
@@ -183,8 +183,8 @@
   .#{$prefix}--toggle.#{$prefix}--skeleton + .#{$prefix}--toggle__label > .#{$prefix}--toggle__appearance {
     &:before,
     &:after {
-      background-color: palette('classic', 'brand-01');
-      border-color: palette('classic', 'brand-01');
+      background-color: palette('primary', 'brand-01');
+      border-color: palette('primary', 'brand-01');
       cursor: default;
     }
   }
@@ -199,11 +199,11 @@
   .#{$prefix}--toggle.#{$prefix}--skeleton + .#{$prefix}--toggle__label > .#{$prefix}--toggle__appearance {
     &:before {
       background: transparent;
-      border-color: palette('classic', 'ui-05');
+      border-color: palette('primary', 'ui-05');
     }
 
     &:after {
-      background-color: palette('classic', 'ui-05');
+      background-color: palette('primary', 'ui-05');
       border: none;
     }
   }

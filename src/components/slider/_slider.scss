@@ -52,7 +52,7 @@
 
   .#{$prefix}--slider__range-label {
     @include typescale('zeta');
-    color: palette('classic', 'text-02');
+    color: palette('primary', 'text-02');
 
     &:last-of-type {
       margin-right: $spacing-md;
@@ -63,7 +63,7 @@
     position: absolute;
     width: 100%;
     height: rem(4px);
-    background: palette('classic', 'ui-04');
+    background: palette('primary', 'ui-04');
     cursor: pointer;
     transform: translate(0%, -50%);
   }
@@ -72,7 +72,7 @@
     position: absolute;
     width: 100%;
     height: rem(4px);
-    background: palette('classic', 'brand-01');
+    background: palette('primary', 'brand-01');
     transform-origin: left;
     pointer-events: none;
     transform: translate(0%, -50%);
@@ -82,7 +82,7 @@
     position: absolute;
     height: rem(24px);
     width: rem(24px);
-    background: palette('classic', 'brand-01');
+    background: palette('primary', 'brand-01');
     border-radius: 50%;
     top: 0;
     transform: translate(-50%, -50%);
@@ -101,7 +101,7 @@
       @include focus-outline('blurred');
     }
     &:active {
-      background: darken(palette('classic', 'brand-01'), 5%);
+      background: darken(palette('primary', 'brand-01'), 5%);
       transform: translate(-50%, -50%) scale(1.25);
     }
   }

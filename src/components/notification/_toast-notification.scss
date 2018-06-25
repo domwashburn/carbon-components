@@ -22,8 +22,8 @@
     justify-content: space-between;
     width: 16.875rem;
     padding: $spacing-md $spacing-md $spacing-xs $spacing-md;
-    background-color: palette('classic', 'ui-01');
-    color: palette('classic', 'text-01');
+    background-color: palette('primary', 'ui-01');
+    color: palette('primary', 'text-01');
     margin-top: $spacing-xs;
     margin-bottom: $spacing-xs;
     margin-right: $spacing-md;
@@ -34,23 +34,23 @@
   }
 
   .#{$prefix}--toast-notification--error {
-    @include notification--color(palette('classic', 'support-01'));
+    @include notification--color(palette('primary', 'support-01'));
   }
 
   .#{$prefix}--toast-notification--success {
-    @include notification--color(palette('classic', 'support-02'));
+    @include notification--color(palette('primary', 'support-02'));
   }
 
   .#{$prefix}--toast-notification--info {
-    @include notification--color(palette('classic', 'support-04'));
+    @include notification--color(palette('primary', 'support-04'));
   }
 
   .#{$prefix}--toast-notification--warning {
-    @include notification--color(palette('classic', 'support-03'));
+    @include notification--color(palette('primary', 'support-03'));
   }
 
   .#{$prefix}--toast-notification__close-button {
-    background-color: palette('classic', 'ui-01');
+    background-color: palette('primary', 'ui-01');
     border: none;
     cursor: pointer;
     margin: 0;
@@ -66,7 +66,7 @@
   .#{$prefix}--toast-notification__icon {
     height: 10px;
     width: 10px;
-    fill: palette('classic', 'ui-05');
+    fill: palette('primary', 'ui-05');
     position: absolute;
     top: 1px;
     right: 1px;
@@ -82,7 +82,7 @@
 
   .#{$prefix}--toast-notification__subtitle {
     @include typescale('omega');
-    color: palette('classic', 'text-02');
+    color: palette('primary', 'text-02');
     margin-top: 0;
     margin-bottom: $spacing-md;
     line-height: 1.2;
@@ -90,7 +90,7 @@
 
   .#{$prefix}--toast-notification__caption {
     @include typescale('omega');
-    color: palette('classic', 'text-02');
+    color: palette('primary', 'text-02');
     line-height: 1;
   }
 }

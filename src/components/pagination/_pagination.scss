@@ -20,11 +20,11 @@ $css--helpers: true;
     @include reset;
     @include font-family;
     width: 100%;
-    background-color: palette('classic', 'ui-01');
+    background-color: palette('primary', 'ui-01');
     padding: $spacing-xs $spacing-md;
     display: flex;
     align-items: center;
-    border: 1px solid palette('classic', 'ui-03');
+    border: 1px solid palette('primary', 'ui-03');
 
     .#{$prefix}--form-item {
       flex: auto;
@@ -44,7 +44,7 @@ $css--helpers: true;
 
   .#{$prefix}--pagination__text {
     @include typescale('omega');
-    color: palette('classic', 'text-02');
+    color: palette('primary', 'text-02');
     display: none;
 
     @include breakpoint('530px') {
@@ -55,7 +55,7 @@ $css--helpers: true;
   .#{$prefix}--pagination__button-icon {
     height: rem(12px);
     width: rem(12px);
-    fill: palette('classic', 'ui-05');
+    fill: palette('primary', 'ui-05');
     pointer-events: none;
     transition: $transition--base;
   }
@@ -80,7 +80,7 @@ $css--helpers: true;
       cursor: default;
 
       .#{$prefix}--pagination__button-icon {
-        fill: palette('classic', 'ui-05');
+        fill: palette('primary', 'ui-05');
       }
     }
   }
@@ -129,7 +129,7 @@ $css--helpers: true;
     }
 
     .#{$prefix}--text-input {
-      background-color: palette('classic', 'field-01');
+      background-color: palette('primary', 'field-01');
       height: rem(24px);
       min-width: rem(24px);
       width: rem(24px);
@@ -154,8 +154,8 @@ $css--helpers: true;
 
     .#{$prefix}--pagination__button {
       height: 100%;
-      border-left: 1px solid palette('classic', 'ui-03');
-      border-right: 1px solid palette('classic', 'ui-03');
+      border-left: 1px solid palette('primary', 'ui-03');
+      border-right: 1px solid palette('primary', 'ui-03');
       width: rem(42px);
       margin: 0;
     }

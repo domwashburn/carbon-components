@@ -21,7 +21,7 @@
 
   .#{$prefix}--form-item--light input,
   .#{$prefix}--form-item--light input[type='number'] {
-    background: palette('classic', 'field-02') !important;
+    background: palette('primary', 'field-02') !important;
   }
 
   .#{$prefix}--label {
@@ -52,7 +52,7 @@
   input[data-invalid],
   textarea[data-invalid],
   select[data-invalid] {
-    box-shadow: 0 2px 0px 0px palette('classic', 'support-01');
+    box-shadow: 0 2px 0px 0px palette('primary', 'support-01');
 
     ~ .#{$prefix}--form-requirement {
       max-height: rem(200px);
@@ -78,13 +78,13 @@
     &::before {
       content: '*';
       display: inline-block;
-      color: palette('classic', 'support-01');
+      color: palette('primary', 'support-01');
     }
   }
 
   .#{$prefix}--form__helper-text {
     @include typescale('omega');
-    color: palette('classic', 'text-02');
+    color: palette('primary', 'text-02');
     order: 1;
     line-height: 1.5;
     z-index: 0;

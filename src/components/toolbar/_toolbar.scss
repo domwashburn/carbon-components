@@ -35,12 +35,12 @@ $css--helpers: true;
     }
 
     .#{$prefix}--overflow-menu__icon {
-      fill: palette('classic', 'text-02');
+      fill: palette('primary', 'text-02');
       transition: fill 50ms $carbon--standard-easing;
     }
 
     .#{$prefix}--search-magnifier {
-      fill: palette('classic', 'text-02');
+      fill: palette('primary', 'text-02');
       transform: scale(1.15);
       transition: all 175ms $carbon--standard-easing;
       top: rem(8px);
@@ -62,7 +62,7 @@ $css--helpers: true;
       }
 
       .#{$prefix}--search-input {
-        background-color: palette('classic', 'field-02');
+        background-color: palette('primary', 'field-02');
       }
 
       .#{$prefix}--search-close {
@@ -75,7 +75,7 @@ $css--helpers: true;
     }
 
     .#{$prefix}--overflow-menu--open > .#{$prefix}--overflow-menu__icon {
-      fill: palette('classic', 'brand-01');
+      fill: palette('primary', 'brand-01');
     }
   }
 
@@ -117,7 +117,7 @@ $css--helpers: true;
   .#{$prefix}--toolbar-menu__divider {
     width: 100%;
     border: 0;
-    border-top: 1px solid palette('classic', 'ui-03');
+    border-top: 1px solid palette('primary', 'ui-03');
   }
 
   .#{$prefix}--radio-button-group {

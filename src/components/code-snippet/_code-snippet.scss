@@ -23,18 +23,18 @@
     font-size: inherit;
     border: 1px solid transparent;
     border-radius: 4px;
-    background-color: palette('classic', 'field-01');
+    background-color: palette('primary', 'field-01');
     font-size: 85%;
     cursor: pointer;
 
     &:hover {
-      background-color: darken(palette('classic', 'field-01'), 10%);
+      background-color: darken(palette('primary', 'field-01'), 10%);
     }
 
     &:focus {
       @include focus-outline;
       outline: none;
-      border: 1px solid palette('classic', 'brand-01');
+      border: 1px solid palette('primary', 'brand-01');
     }
   }
 
@@ -43,10 +43,10 @@
   }
 
   .#{$prefix}--snippet--inline.#{$prefix}--snippet--light {
-    background-color: palette('classic', 'field-02');
+    background-color: palette('primary', 'field-02');
 
     &:hover {
-      background-color: rgba(palette('classic', 'brand-02'), 0.1);
+      background-color: rgba(palette('primary', 'brand-02'), 0.1);
     }
   }
 
@@ -93,7 +93,7 @@
   }
 
   .#{$prefix}--snippet__icon {
-    fill: palette('classic', 'brand-01');
+    fill: palette('primary', 'brand-01');
     height: rem(24px);
     width: rem(18px);
     transition: all $transition--base $carbon--standard-easing;
@@ -174,7 +174,7 @@
   }
 
   .#{$prefix}--snippet-btn--expand .#{$prefix}--icon-chevron--down {
-    fill: palette('classic', 'brand-01');
+    fill: palette('primary', 'brand-01');
     margin-left: $spacing-2xs;
     transform: rotate(0deg);
     transition: $transition--base;
@@ -182,7 +182,7 @@
 
   .#{$prefix}--snippet-btn--expand:hover .#{$prefix}--icon-chevron--down,
   .#{$prefix}--snippet-btn--expand:focus .#{$prefix}--icon-chevron--down {
-    fill: palette('classic', 'inverse-01');
+    fill: palette('primary', 'inverse-01');
   }
 
   .#{$prefix}--snippet--expand .#{$prefix}--snippet-btn--expand .#{$prefix}--icon-chevron--down {

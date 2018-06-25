@@ -49,6 +49,12 @@ $nav-06: $color__teal-50 !default;
 $nav-07: $color__blue-30 !default;
 $nav-08: $color__blue-51 !default;
 
+$hover-primary: darken($brand-01, 10%) !default;
+$hover-primary-text: darken($brand-01, 15%) !default;
+$hover-danger: darken($support-01, 10%) !default;
+$hover-secondary: $brand-01 !default;
+$hover-row: rgba($brand-02, 0.1) !default;
+
 // ------------------//
 //  Theme Variables  //
 // ------------------//
@@ -67,188 +73,246 @@ $nav-08: $color__blue-51 !default;
 // TODO: map color variables to a light theme
 
 // Light Color Theme Variables
-$light-ui__brand-01: $brand-01 !default;
-$light-ui__brand-02: $brand-02 !default;
-$light-ui__brand-03: $brand-03 !default;
-$light-ui__inverse-01: $inverse-01 !default; // inverse of what?
-$light-ui__inverse-02: $inverse-02 !default; // inverse of what?
-$light-ui__ui-01: $ui-01 !default;
-$light-ui__ui-02: $ui-02 !default;
-$light-ui__ui-03: $ui-03 !default;
-$light-ui__ui-04: $ui-04 !default;
-$light-ui__ui-05: $ui-05 !default;
-$light-ui__text-01: $text-01 !default;
-$light-ui__text-02: $text-02 !default;
-$light-ui__text-03: $text-03 !default;
-$light-ui__field-01: $field-01 !default;
-$light-ui__field-02: $field-02 !default;
-$light-ui__support-01: $support-01 !default;
-$light-ui__support-02: $support-02 !default;
-$light-ui__support-03: $support-03 !default;
-$light-ui__support-04: $support-04 !default;
-$light-ui__nav-01: $nav-01 !default;
-$light-ui__nav-02: $nav-02 !default;
-$light-ui__nav-03: $nav-03 !default;
-$light-ui__nav-04: $nav-04 !default;
-$light-ui__nav-05: $nav-05 !default;
-$light-ui__nav-06: $nav-06 !default;
-$light-ui__nav-07: $nav-07 !default;
-$light-ui__nav-08: $nav-08 !default;
+$primary-ui__brand-01: $brand-01 !default;
+$primary-ui__brand-02: $brand-02 !default;
+$primary-ui__brand-03: $brand-03 !default;
+$primary-ui__inverse-01: $inverse-01 !default; // inverse of what?
+$primary-ui__inverse-02: $inverse-02 !default; // inverse of what?
+$primary-ui__ui-01: $ui-01 !default;
+$primary-ui__ui-02: $ui-02 !default;
+$primary-ui__ui-03: $ui-03 !default;
+$primary-ui__ui-04: $ui-04 !default;
+$primary-ui__ui-05: $ui-05 !default;
+$primary-ui__text-01: $text-01 !default;
+$primary-ui__text-02: $text-02 !default;
+$primary-ui__text-03: $text-03 !default;
+$primary-ui__field-01: $field-01 !default;
+$primary-ui__field-02: $field-02 !default;
+$primary-ui__support-01: $support-01 !default;
+$primary-ui__support-02: $support-02 !default;
+$primary-ui__support-03: $support-03 !default;
+$primary-ui__support-04: $support-04 !default;
+$primary-ui__nav-01: $nav-01 !default;
+$primary-ui__nav-02: $nav-02 !default;
+$primary-ui__nav-03: $nav-03 !default;
+$primary-ui__nav-04: $nav-04 !default;
+$primary-ui__nav-05: $nav-05 !default;
+$primary-ui__nav-06: $nav-06 !default;
+$primary-ui__nav-07: $nav-07 !default;
+$primary-ui__nav-08: $nav-08 !default;
 
-// Dark Color Theme Variables
-$dark-ui__brand-01: $brand-01 !default;
-$dark-ui__brand-02: $brand-02 !default;
-$dark-ui__brand-03: $brand-03 !default;
-$dark-ui__inverse-01: $inverse-01 !default; // inverse of what?
-$dark-ui__inverse-02: $inverse-02 !default; // inverse of what?
-$dark-ui__ui-01: $ui-01 !default;
-$dark-ui__ui-02: $ui-02 !default;
-$dark-ui__ui-03: $ui-03 !default;
-$dark-ui__ui-04: $ui-04 !default;
-$dark-ui__ui-05: $ui-05 !default;
-$dark-ui__text-01: $text-01 !default;
-$dark-ui__text-02: $text-02 !default;
-$dark-ui__text-03: $text-03 !default;
-$dark-ui__field-01: $field-01 !default;
-$dark-ui__field-02: $field-02 !default;
-$dark-ui__support-01: $support-01 !default;
-$dark-ui__support-02: $support-02 !default;
-$dark-ui__support-03: $support-03 !default;
-$dark-ui__support-04: $support-04 !default;
-$dark-ui__nav-01: $nav-01 !default;
-$dark-ui__nav-02: $nav-02 !default;
-$dark-ui__nav-03: $nav-03 !default;
-$dark-ui__nav-04: $nav-04 !default;
-$dark-ui__nav-05: $nav-05 !default;
-$dark-ui__nav-06: $nav-06 !default;
-$dark-ui__nav-07: $nav-07 !default;
-$dark-ui__nav-08: $nav-08 !default;
+$primary-ui__hover-primary: darken($brand-01, 10%) !default;
+$primary-ui__hover-primary-text: darken($brand-01, 15%) !default;
+$primary-ui__hover-danger: darken($support-01, 10%) !default;
+$primary-ui__hover-secondary: $brand-01 !default;
+$primary-ui__hover-row: rgba($brand-02, 0.1) !default;
+
+// secondary theme is set to the Carbon Dark theme by default
+// More information on theming here:
+// http://themes.carbondesignsystem.com/
+$secondary-ui__brand-01: #5aaafa !default;
+$secondary-ui__brand-02: #7cc7ff !default;
+$secondary-ui__brand-03: #41d6c3 !default;
+$secondary-ui__inverse-01: #152935 !default; // inverse of what?
+$secondary-ui__inverse-02: #272d33 !default; // inverse of what?
+$secondary-ui__ui-01: #2d3f49 !default;
+$secondary-ui__ui-02: #20343e !default;
+$secondary-ui__ui-03: #152935 !default;
+$secondary-ui__ui-04: #20343e !default;
+$secondary-ui__ui-05: #8c9ba5 !default;
+$secondary-ui__text-01: #ffffff !default;
+$secondary-ui__text-02: #dfe6eb !default;
+$secondary-ui__text-03: #8c9ba5 !default;
+$secondary-ui__field-01: rgba(255, 255, 255, 0.1) !default;
+$secondary-ui__field-02: #ffffff !default;
+$secondary-ui__support-01: #ff5050 !default;
+$secondary-ui__support-02: #8cd211 !default;
+$secondary-ui__support-03: #efc100 !default;
+$secondary-ui__support-04: #7cc7ff !default;
+$secondary-ui__nav-01: $nav-01 !default;
+$secondary-ui__nav-02: $nav-02 !default;
+$secondary-ui__nav-03: $nav-03 !default;
+$secondary-ui__nav-04: $nav-04 !default;
+$secondary-ui__nav-05: $nav-05 !default;
+$secondary-ui__nav-06: $nav-06 !default;
+$secondary-ui__nav-07: $nav-07 !default;
+$secondary-ui__nav-08: $nav-08 !default;
+
+$secondary-ui__hover-primary: darken($secondary-ui__brand-01, 10%) !default;
+$secondary-ui__hover-primary-text: darken($secondary-ui__brand-01, 15%) !default;
+$secondary-ui__hover-danger: darken($secondary-ui__support-01, 10%) !default;
+$secondary-ui__hover-secondary: $secondary-ui__brand-01 !default;
+$secondary-ui__hover-row: rgba($secondary-ui__brand-02, 0.1) !default;
 
 // Maps
 
 $__palette: (
-	// literal mapping of existing carbon color theme to a map
-  'classic': (
-    'brand-01': $light-ui__brand-01,
-    'brand-02': $light-ui__brand-02,
-    'brand-03': $light-ui__brand-03,
-    'inverse-01': $light-ui__inverse-01,
-    'inverse-02': $light-ui__inverse-02,
-    'ui-01': $light-ui__ui-01,
-    'ui-02': $light-ui__ui-02,
-    'ui-03': $light-ui__ui-03,
-    'ui-04': $light-ui__ui-04,
-    'ui-05': $light-ui__ui-05,
-    'text-01': $light-ui__text-01,
-    'text-02': $light-ui__text-02,
-    'text-03': $light-ui__text-03,
-    'field-01': $light-ui__field-01,
-    'field-02': $light-ui__field-02,
-    'support-01': $light-ui__support-01,
-    'support-02': $light-ui__support-02,
-    'support-03': $light-ui__support-03,
-    'support-04': $light-ui__support-04,
-    'nav-01': $light-ui__nav-01,
-    'nav-02': $light-ui__nav-02,
-    'nav-03': $light-ui__nav-03,
-    'nav-04': $light-ui__nav-04,
-    'nav-05': $light-ui__nav-05,
-    'nav-06': $light-ui__nav-06,
-    'nav-07': $light-ui__nav-07,
-    'nav-08': $light-ui__nav-08,
+  // literal mapping of existing carbon color theme to a map
+    'primary':
+    (
+      'brand-01': $primary-ui__brand-01,
+      'brand-02': $primary-ui__brand-02,
+      'brand-03': $primary-ui__brand-03,
+      'inverse-01': $primary-ui__inverse-01,
+      'inverse-02': $primary-ui__inverse-02,
+      'ui-01': $primary-ui__ui-01,
+      'ui-02': $primary-ui__ui-02,
+      'ui-03': $primary-ui__ui-03,
+      'ui-04': $primary-ui__ui-04,
+      'ui-05': $primary-ui__ui-05,
+      'text-01': $primary-ui__text-01,
+      'text-02': $primary-ui__text-02,
+      'text-03': $primary-ui__text-03,
+      'field-01': $primary-ui__field-01,
+      'field-02': $primary-ui__field-02,
+      'support-01': $primary-ui__support-01,
+      'support-02': $primary-ui__support-02,
+      'support-03': $primary-ui__support-03,
+      'support-04': $primary-ui__support-04,
+      'nav-01': $primary-ui__nav-01,
+      'nav-02': $primary-ui__nav-02,
+      'nav-03': $primary-ui__nav-03,
+      'nav-04': $primary-ui__nav-04,
+      'nav-05': $primary-ui__nav-05,
+      'nav-06': $primary-ui__nav-06,
+      'nav-07': $primary-ui__nav-07,
+      'nav-08': $primary-ui__nav-08,
+      'hover-primary': $primary-ui__hover-primary,
+      'hover-primary-text': $primary-ui__hover-primary-text,
+      'hover-danger': $primary-ui__hover-danger,
+      'hover-secondary': $primary-ui__hover-secondary,
+      'hover-row': $primary-ui__hover-row,
+    ),
+  'secondary': (
+    'brand-01': $secondary-ui__brand-01,
+    'brand-02': $secondary-ui__brand-02,
+    'brand-03': $secondary-ui__brand-03,
+    'inverse-01': $secondary-ui__inverse-01,
+    'inverse-02': $secondary-ui__inverse-02,
+    'ui-01': $secondary-ui__ui-01,
+    'ui-02': $secondary-ui__ui-02,
+    'ui-03': $secondary-ui__ui-03,
+    'ui-04': $secondary-ui__ui-04,
+    'ui-05': $secondary-ui__ui-05,
+    'text-01': $secondary-ui__text-01,
+    'text-02': $secondary-ui__text-02,
+    'text-03': $secondary-ui__text-03,
+    'field-01': $secondary-ui__field-01,
+    'field-02': $secondary-ui__field-02,
+    'support-01': $secondary-ui__support-01,
+    'support-02': $secondary-ui__support-02,
+    'support-03': $secondary-ui__support-03,
+    'support-04': $secondary-ui__support-04,
+    'nav-01': $secondary-ui__nav-01,
+    'nav-02': $secondary-ui__nav-02,
+    'nav-03': $secondary-ui__nav-03,
+    'nav-04': $secondary-ui__nav-04,
+    'nav-05': $secondary-ui__nav-05,
+    'nav-06': $secondary-ui__nav-06,
+    'nav-07': $secondary-ui__nav-07,
+    'nav-08': $secondary-ui__nav-08,
+    'hover-primary': $secondary-ui__hover-primary,
+    'hover-primary-text': $secondary-ui__hover-primary-text,
+    'hover-danger': $secondary-ui__hover-danger,
+    'hover-secondary': $secondary-ui__hover-secondary,
+    'hover-row': $secondary-ui__hover-row,
   ),
-
-  // colors that are used across both themes
-	'ui': (
-		'clear': transparent,
-		'base-01': #eaeaea, // Color: Gray 1
-		'base-02': #d8d8d8, // Color: Gray 10
-		'base-03': #c0bfc0, // Color: Gray 20
-		'base-04': #a6a5a6, // Color: Gray 30
-		'base-05': #949394, // Color: Gray 40
-		'base-06': #777677, // Color: Gray 50
-		'base-07': #595859, // Color: Gray 60
-		'base-08': #464646, // Color: Gray 70
-		'base-09': #343334, // Color: Gray 80
-		'base-10': #272727, // Color: Gray 90
-		'base-11': #000000, // Color: Black
-		'white-01': #ffffff, // Color: White
-		'white-02': #f9f9f9, // Color: Neutral White 2
-		'white-03': #f6f6f6, // Color: Neutral White 3
-		'accent-01': #6b7184, // Color: Slate Blue
-		'accent-02': #00b6cb, // Color: Aqua 30
-  ),
-	// theme map with identical keys for light theme
-	// 'light': (
-  //   
-  // ),
-	// 'dark': (
-  //   
-  // ),
-	'light': (
-		// Background Colors
-    'bg-light': #ffffff, // Color: White
-		'bg-medium': #f9f9f9, // Color: Neutral White 2
-		'bg-dark': #f3f3f3, // Color: Neutral White 4
-		// Text Colors
-		'text-01': #595859, // Color: Gray 60
-		'text-02': #1d364d, // Remove
-		'text-03': #595859, // Remove
-    // Divider Color
-    'divider': #eaeaea, // Color: Gray 1
-		// Active Colors
-		'active': #a91560, // Color: Magenta 60
-		'focus-light': #dc267f, // Color: Magenta 50
-		'focus-dark': #831b4c, // Color: Magenta 70
-		'focus-neutral': rgba(#d8d8d8, 0.3), // Color: Gray 30 at 30%
-		'focus-a11y': rgba(#047cc0, .75), // TO DO: Replace with `focus-highlight`
-		'focus-highlight': rgba(#00b6cb, .75), // Color: Aqua 30
-		'disabled': #a6a5a6, // Color: Gray 30
-		// Status Colors
-		'status-info': $light-ui__support-04, // Color: Blue 50
-		'status-success': $light-ui__support-02, // Color: Green 50
-		'status-warn': $light-ui__support-03, // Color: Yellow 10
-		'status-error': $light-ui__support-01, // Color: Red 50
-	),
-
-	// theme map with identical keys for dark theme
-	'dark': (
-		// dark theme background tints
-		'bg-light': #464646, // Color: Gray 70
-		'bg-medium': #585758, // Color: ???
-		'bg-dark': #343334, // Color: Gray 80
-		// Text Colors
-		'text-01': #eaeaea, // Color: Gray 1
-		'text-02': #c0bfc0, // Remove
-		'text-03': #a6a5a6, // Remove
-		// Divider Color
-		'divider': #272727, // Color: Gray 90
-    // Active Colors
-		'active': #40d5bb, // Color: Teal 20
-		//TO DO: Update focus to read active, and reserve focus for the highlight, explore hover highlight colors
-		'focus-light': #8ee9d4, // Color: Teal 10 
-		'focus-dark': #00baa1, // Color: Teal 30
-		'focus-neutral': rgba(#000000, 0.3), // Color: Black at 30%
-		'focus-a11y': rgba(#95c4f3, .75), // TO DO: Replace with `focus-highlight`
-		'focus-highlight': rgba(#00b6cb, .75), // Color: Aqua 30
-		'disabled': #777677, // Color: Gray 50
-    // Status Colors
-		'status-info': #2d74da, // Color: Blue 50
-		'status-success': #00884b, // Color: Green 50
-		'status-warn': #fed500, // Color: Yellow 10
-		'status-error': #e62325, // Color: Red 50
+  // colors that are used across both themes 'common': (
+      'clear': transparent,
+      'base-01': #eaeaea,
+      // Color: Gray 1
+        'base-02': #d8d8d8,
+      // Color: Gray 10
+        'base-03': #c0bfc0,
+      // Color: Gray 20
+        'base-04': #a6a5a6,
+      // Color: Gray 30
+        'base-05': #949394,
+      // Color: Gray 40
+        'base-06': #777677,
+      // Color: Gray 50
+        'base-07': #595859,
+      // Color: Gray 60
+        'base-08': #464646,
+      // Color: Gray 70
+        'base-09': #343334,
+      // Color: Gray 80
+        'base-10': #272727,
+      // Color: Gray 90
+        'base-11': #000000,
+      // Color: Black
+        'white-01': #ffffff,
+      // Color: White
+        'white-02': #f9f9f9,
+      // Color: Neutral White 2
+        'white-03': #f6f6f6,
+      // Color: Neutral White 3
+        'accent-01': #6b7184,
+      // Color: Slate Blue
+        'accent-02': #00b6cb,
+      // Color: Aqua 30,,
+    ),
+  // theme map with identical keys for light theme 'primary-new': (
+      // Background Colors
+        'bg-primary': $primary-ui__ui-01,
+      'bg-secondary': $primary-ui__ui-02,
+      'bg-tertiary': $primary-ui__ui-02,
+      // needed for AP UI theme...
+        // Text Colors
+        'text-01': $primary-ui__text-01,
+      'text-02': $primary-ui__text-02,
+      'text-03': $primary-ui__text-03,
+      // Divider Color
+        'divider': $primary-ui__brand-03,
+      // Active Colors
+        'active': $primary-ui__brand-01,
+      'hover-light': $primary-ui__hover-secondary,
+      'hover-dark': $primary-ui__hover-primary,
+      'hover-subtle': $primary-ui__hover-row,
+      'hover-danger': $primary-ui__hover-danger,
+      'focus-a11y': rgba(#047cc0, 0.75),
+      'focus-highlight': rgba(#00b6cb, 0.75),
+      'disabled': #a6a5a6,
+      // Status Colors
+        'status-info': $primary-ui__support-04,
+      'status-success': $primary-ui__support-02,
+      'status-warn': $primary-ui__support-03,
+      'status-error': $primary-ui__support-01
+    ),
+  // theme map with identical keys for dark theme 'secondary-new': (
+      // dark theme background tints
+        'bg-primary': #464646,
+      'bg-secondary': #585758,
+      'bg-tertiary': #343334,
+      // needed for AP UI theme...
+        // Text Colors
+        'text-01': #eaeaea,
+      'text-02': #c0bfc0,
+      'text-03': #a6a5a6,
+      // Divider Color
+        'divider': #272727,
+      // Active Colors
+        'active': #40d5bb,
+      //TO DO: Update focus to read active, and reserve focus for the highlight, explore hover highlight colors
+        // static, active, hover, focus, disabled
+        'hover-light': #8ee9d4,
+      'hover-dark': #00baa1,
+      'hover-subtle': rgba(#000000, 0.3),
+      'hover-danger': $secondary-ui__hover-danger,
+      'focus-a11y': rgba(#95c4f3, 0.75),
+      'focus-highlight': rgba(#00b6cb, 0.75),
+      'disabled': #777677,
+      // Status Colors
+        'status-info': $primary-ui__support-04,
+      'status-success': $primary-ui__support-02,
+      'status-warn': $primary-ui__support-03,
+      'status-error': $primary-ui__support-01
     )
 );
 
 @function palette($palette, $color) {
   @return map-get(map-get($__palette, $palette), $color);
 }
-
-$hover-primary: darken(palette('classic', 'brand-01'), 10%) !default;
-$hover-primary-text: darken(palette('classic', 'brand-01'), 15%) !default;
-$hover-danger: darken(palette('classic', 'support-01'), 10%) !default;
-$hover-secondary: palette('classic', 'brand-01') !default;
-$hover-row: rgba(palette('classic', 'brand-02'), 0.1) !default;
 
 // Global
 $input-border: 1px solid transparent !default;
@@ -278,21 +342,21 @@ $card-flex-align: center !default;
 $checkbox-border-width: 2px !default;
 
 // Code Snippet
-$snippet-background-color: palette('classic', 'ui-01 ') !default;
+$snippet-background-color: palette('primary', 'ui-01 ') !default;
 $snippet-border-color: $ui-03 !default;
 
 // Content Switcher
 $content-switcher-border-radius: 8px !default;
-$content-switcher-option-border: 1px solid palette('classic', 'brand-01') !default;
+$content-switcher-option-border: 1px solid palette('primary', 'brand-01') !default;
 
 // Data Table
 $data-table-heading-transform: uppercase !default;
-$data-table-heading-border-bottom: 1px solid palette('classic', 'brand-01') !default;
+$data-table-heading-border-bottom: 1px solid palette('primary', 'brand-01') !default;
 $data-table-row-height: 2rem !default;
 
 // Modal
-$modal-border-top: palette('classic', 'brand-01') 4px solid !default;
-$modal-footer-background-color: palette('classic', 'ui-02') !default;
+$modal-border-top: palette('primary', 'brand-01') 4px solid !default;
+$modal-footer-background-color: palette('primary', 'ui-02') !default;
 
 // Progress Indicator
 $progress-indicator-bar-width: 1px inset transparent !default;
@@ -308,4 +372,4 @@ $structured-list-text-transform: none !default;
 
 // Skeleton Loading
 
-$skeleton: rgba(palette('classic', 'brand-01'), 0.1) !default; //old $field-01
+$skeleton: rgba(palette('primary', 'brand-01'), 0.1) !default; //old $field-01

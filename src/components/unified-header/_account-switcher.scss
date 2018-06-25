@@ -13,7 +13,7 @@
   }
 
   .#{$prefix}--account-switcher__linked-icon {
-    fill: palette('classic', 'inverse-01');
+    fill: palette('primary', 'inverse-01');
     height: 1rem;
     width: 1rem;
     margin: 0 0.5rem;
@@ -27,9 +27,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: palette('classic', 'inverse-01');
+    color: palette('primary', 'inverse-01');
     padding: 0 1rem;
-    background-color: palette('classic', 'nav-01');
+    background-color: palette('primary', 'nav-01');
     cursor: pointer;
 
     &:focus,
@@ -104,7 +104,7 @@
     top: 100%;
     right: 0;
     transform: translateY(-10%);
-    color: palette('classic', 'inverse-01');
+    color: palette('primary', 'inverse-01');
     z-index: 8000;
   }
 

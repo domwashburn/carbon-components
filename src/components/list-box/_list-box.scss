@@ -21,17 +21,17 @@ $list-box-menu-width: rem(300px);
     width: $list-box-width;
     height: $list-box-height;
     max-height: $list-box-height;
-    background-color: palette('classic', 'field-01');
+    background-color: palette('primary', 'field-01');
     border: none;
-    box-shadow: 0 1px 0 0 palette('classic', 'text-02');
+    box-shadow: 0 1px 0 0 palette('primary', 'text-02');
     order: 1;
     cursor: pointer;
-    color: palette('classic', 'text-01');
+    color: palette('primary', 'text-01');
   }
 
   // Light variation for 'list-box'
   .#{$prefix}--list-box--light {
-    background-color: palette('classic', 'field-02');
+    background-color: palette('primary', 'field-02');
   }
 
   // Disabled state for a `list-box`
@@ -60,7 +60,7 @@ $list-box-menu-width: rem(300px);
   }
 
   .#{$prefix}--list-box--inline .#{$prefix}--list-box__label {
-    color: palette('classic', 'brand-01');
+    color: palette('primary', 'brand-01');
   }
 
   .#{$prefix}--list-box--inline .#{$prefix}--list-box__field {
@@ -78,7 +78,7 @@ $list-box-menu-width: rem(300px);
   }
 
   .#{$prefix}--list-box--inline > .#{$prefix}--list-box__field[aria-expanded='true'] ~ .#{$prefix}--list-box__menu {
-    outline: 1px solid palette('classic', 'brand-01');
+    outline: 1px solid palette('primary', 'brand-01');
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -102,7 +102,7 @@ $list-box-menu-width: rem(300px);
   .#{$prefix}--list-box__field:focus,
   .#{$prefix}--list-box__field[aria-expanded='true'] {
     outline: none;
-    box-shadow: 0 2px 0 0 palette('classic', 'brand-01');
+    box-shadow: 0 2px 0 0 palette('primary', 'brand-01');
   }
 
   .#{$prefix}--list-box__field[disabled] {
@@ -114,7 +114,7 @@ $list-box-menu-width: rem(300px);
   .#{$prefix}--list-box__label {
     @include typescale('zeta');
 
-    color: palette('classic', 'text-01');
+    color: palette('primary', 'text-01');
     font-weight: 600;
     user-select: none;
   }
@@ -133,7 +133,7 @@ $list-box-menu-width: rem(300px);
   }
 
   .#{$prefix}--list-box__menu-icon > svg {
-    fill: palette('classic', 'brand-01');
+    fill: palette('primary', 'brand-01');
     height: 100%;
   }
 
@@ -156,12 +156,12 @@ $list-box-menu-width: rem(300px);
   }
 
   .#{$prefix}--list-box__selection > svg {
-    fill: palette('classic', 'ui-05');
+    fill: palette('primary', 'ui-05');
     height: 100%;
   }
 
   .#{$prefix}--list-box__selection:focus {
-    outline: 1px solid palette('classic', 'brand-01');
+    outline: 1px solid palette('primary', 'brand-01');
   }
 
   // Modifier for a selection to show that multiple selections have been made
@@ -173,7 +173,7 @@ $list-box-menu-width: rem(300px);
     align-items: center;
     justify-content: center;
     padding: 0;
-    background-color: palette('classic', 'brand-01');
+    background-color: palette('primary', 'brand-01');
     height: rem(18px);
     color: white;
     line-height: 0;
@@ -204,7 +204,7 @@ $list-box-menu-width: rem(300px);
     right: 0;
     top: $list-box-height;
     width: $list-box-width;
-    background-color: palette('classic', 'ui-01');
+    background-color: palette('primary', 'ui-01');
     max-height: rem(120px);
     overflow-y: auto;
     z-index: z('dropdown');
@@ -227,7 +227,7 @@ $list-box-menu-width: rem(300px);
     background-color: $hover-row;
     outline: 1px solid transparent;
     text-decoration: underline;
-    color: palette('classic', 'text-01');
+    color: palette('primary', 'text-01');
   }
 
   // Tweaks for descendants

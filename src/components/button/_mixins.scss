@@ -47,7 +47,7 @@
   }
 
   &:focus {
-    border: $button-border-width solid palette('classic', 'ui-02');
+    border: $button-border-width solid palette('primary', 'ui-02');
     outline: $button-border-width solid $hover-bg-color;
   }
 

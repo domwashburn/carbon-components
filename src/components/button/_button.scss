@@ -37,69 +37,69 @@
 
   .#{$prefix}--btn--primary {
     @include button-theme(
-      palette('classic', 'brand-01'),
+      palette('primary', 'brand-01'),
       transparent,
-      palette('classic', 'inverse-01'),
+      palette('primary', 'inverse-01'),
       $hover-primary,
-      palette('classic', 'ui-01')
+      palette('primary', 'ui-01')
     );
   }
 
   .#{$prefix}--btn--secondary {
     @include button-theme(
       transparent,
-      palette('classic', 'brand-01'),
-      palette('classic', 'brand-01'),
+      palette('primary', 'brand-01'),
+      palette('primary', 'brand-01'),
       $hover-secondary,
-      palette('classic', 'brand-01')
+      palette('primary', 'brand-01')
     );
 
     &:hover,
     &:focus {
-      color: palette('classic', 'inverse-01');
+      color: palette('primary', 'inverse-01');
     }
 
     &:active {
-      color: palette('classic', 'brand-01');
+      color: palette('primary', 'brand-01');
     }
 
     &:hover > .#{$prefix}--btn__icon,
     &:focus > .#{$prefix}--btn__icon {
-      fill: palette('classic', 'inverse-01');
+      fill: palette('primary', 'inverse-01');
     }
 
     &:hover:disabled,
     &:focus:disabled {
-      color: palette('classic', 'brand-01');
+      color: palette('primary', 'brand-01');
     }
   }
 
   .#{$prefix}--btn--tertiary {
     @include button-theme(
       transparent,
-      palette('classic', 'ui-05'),
-      palette('classic', 'ui-05'),
-      palette('classic', 'ui-05'),
-      palette('classic', 'ui-05')
+      palette('primary', 'ui-05'),
+      palette('primary', 'ui-05'),
+      palette('primary', 'ui-05'),
+      palette('primary', 'ui-05')
     );
 
     &:hover,
     &:focus {
-      color: palette('classic', 'inverse-01');
+      color: palette('primary', 'inverse-01');
     }
 
     &:active {
-      color: palette('classic', 'ui-05');
+      color: palette('primary', 'ui-05');
     }
 
     &:hover:disabled,
     &:focus:disabled {
-      color: palette('classic', 'ui-05');
+      color: palette('primary', 'ui-05');
     }
 
     &:hover > .#{$prefix}--btn__icon,
     &:focus > .#{$prefix}--btn__icon {
-      fill: palette('classic', 'inverse-01');
+      fill: palette('primary', 'inverse-01');
     }
   }
 
@@ -107,17 +107,17 @@
     @include button-theme(
       transparent,
       transparent,
-      palette('classic', 'brand-01'),
-      palette('classic', 'brand-01'),
-      palette('classic', 'brand-01')
+      palette('primary', 'brand-01'),
+      palette('primary', 'brand-01'),
+      palette('primary', 'brand-01')
     );
 
     &:hover,
     &:focus {
-      color: palette('classic', 'inverse-01');
+      color: palette('primary', 'inverse-01');
 
       .#{$prefix}--btn__icon {
-        fill: palette('classic', 'inverse-01');
+        fill: palette('primary', 'inverse-01');
       }
     }
 
@@ -127,10 +127,10 @@
 
     &:hover:disabled,
     &:focus:disabled {
-      color: palette('classic', 'brand-01');
+      color: palette('primary', 'brand-01');
 
       .#{$prefix}--btn__icon {
-        fill: palette('classic', 'brand-01');
+        fill: palette('primary', 'brand-01');
       }
     }
   }
@@ -138,50 +138,50 @@
   .#{$prefix}--btn--danger {
     @include button-theme(
       transparent,
-      palette('classic', 'support-01'),
-      palette('classic', 'support-01'),
-      palette('classic', 'support-01'),
-      palette('classic', 'support-01')
+      palette('primary', 'support-01'),
+      palette('primary', 'support-01'),
+      palette('primary', 'support-01'),
+      palette('primary', 'support-01')
     );
 
     &:hover {
-      color: palette('classic', 'inverse-01');
+      color: palette('primary', 'inverse-01');
       border: $button-border-width solid transparent;
     }
 
     &:focus {
-      color: palette('classic', 'inverse-01');
+      color: palette('primary', 'inverse-01');
     }
 
     &:active {
-      color: palette('classic', 'support-01');
+      color: palette('primary', 'support-01');
     }
 
     &:hover:disabled,
     &:focus:disabled {
-      color: palette('classic', 'support-01');
-      border: $button-border-width solid palette('classic', 'support-01');
+      color: palette('primary', 'support-01');
+      border: $button-border-width solid palette('primary', 'support-01');
     }
 
     &:hover > .#{$prefix}--btn__icon,
     &:focus > .#{$prefix}--btn__icon {
-      fill: palette('classic', 'inverse-01');
+      fill: palette('primary', 'inverse-01');
     }
   }
 
   .#{$prefix}--btn--danger--primary {
     @include button-theme(
-      palette('classic', 'support-01'),
+      palette('primary', 'support-01'),
       transparent,
-      palette('classic', 'inverse-01'),
-      darken(palette('classic', 'support-01'), 10%),
-      palette('classic', 'ui-01')
+      palette('primary', 'inverse-01'),
+      darken(palette('primary', 'support-01'), 10%),
+      palette('primary', 'ui-01')
     );
 
     &:hover:disabled,
     &:focus:disabled {
-      color: palette('classic', 'ui-01');
-      border: $button-border-width solid palette('classic', 'support-01');
+      color: palette('primary', 'ui-01');
+      border: $button-border-width solid palette('primary', 'support-01');
     }
   }
 
