@@ -144,8 +144,6 @@ $secondary-ui__hover-danger: darken($secondary-ui__support-01, 10%) !default;
 $secondary-ui__hover-secondary: $secondary-ui__brand-01 !default;
 $secondary-ui__hover-row: rgba($secondary-ui__brand-02, 0.1) !default;
 
-// Maps
-
 $__palette: (
   // literal mapping of existing carbon color theme to a map
     'primary':
@@ -250,64 +248,64 @@ $__palette: (
         'accent-01': #6b7184,
       // Color: Slate Blue
         'accent-02': #00b6cb,
-      // Color: Aqua 30,,,,
+      // Color: Aqua 30,
     ),
-  // theme map with identical keys for light theme 'primary-new': (
-      // Background Colors
-        'bg-primary': $primary-ui__ui-01,
-      'bg-secondary': $primary-ui__ui-02,
-      'bg-tertiary': $primary-ui__ui-02,
-      // needed for AP UI theme...
-        // Text Colors
-        'text-01': $primary-ui__text-01,
-      'text-02': $primary-ui__text-02,
-      'text-03': $primary-ui__text-03,
-      // Divider Color
-        'divider': $primary-ui__brand-03,
-      // Active Colors
-        'active': $primary-ui__brand-01,
-      'hover-light': $primary-ui__hover-secondary,
-      'hover-dark': $primary-ui__hover-primary,
-      'hover-subtle': $primary-ui__hover-row,
-      'hover-danger': $primary-ui__hover-danger,
-      'focus-a11y': rgba(#047cc0, 0.75),
-      'focus-highlight': rgba(#00b6cb, 0.75),
-      'disabled': #a6a5a6,
-      // Status Colors
-        'status-info': $primary-ui__support-04,
-      'status-success': $primary-ui__support-02,
-      'status-warn': $primary-ui__support-03,
-      'status-error': $primary-ui__support-01
-    ),
-  // theme map with identical keys for dark theme 'secondary-new': (
-      // dark theme background tints
-        'bg-primary': #464646,
-      'bg-secondary': #585758,
-      'bg-tertiary': #343334,
-      // needed for AP UI theme...
-        // Text Colors
-        'text-01': #eaeaea,
-      'text-02': #c0bfc0,
-      'text-03': #a6a5a6,
-      // Divider Color
-        'divider': #272727,
-      // Active Colors
-        'active': #40d5bb,
-      //TO DO: Update focus to read active, and reserve focus for the highlight, explore hover highlight colors
-        // static, active, hover, focus, disabled
-        'hover-light': #8ee9d4,
-      'hover-dark': #00baa1,
-      'hover-subtle': rgba(#000000, 0.3),
-      'hover-danger': $secondary-ui__hover-danger,
-      'focus-a11y': rgba(#95c4f3, 0.75),
-      'focus-highlight': rgba(#00b6cb, 0.75),
-      'disabled': #777677,
-      // Status Colors
-        'status-info': $primary-ui__support-04,
-      'status-success': $primary-ui__support-02,
-      'status-warn': $primary-ui__support-03,
-      'status-error': $primary-ui__support-01
-    )
+  'primary-new': (
+    // Background Colors
+      'bg-primary': $primary-ui__ui-01,
+    'bg-secondary': $primary-ui__ui-02,
+    'bg-tertiary': $primary-ui__ui-02,
+    // needed for AP UI theme...
+      // Text Colors
+      'text-01': $primary-ui__text-01,
+    'text-02': $primary-ui__text-02,
+    'text-03': $primary-ui__text-03,
+    // Divider Color
+      'divider': $primary-ui__brand-03,
+    // Active Colors
+      'active': $primary-ui__brand-01,
+    'hover-light': $primary-ui__hover-secondary,
+    'hover-dark': $primary-ui__hover-primary,
+    'hover-subtle': $primary-ui__hover-row,
+    'hover-danger': $primary-ui__hover-danger,
+    'focus-a11y': rgba(#047cc0, 0.75),
+    'focus-highlight': rgba(#00b6cb, 0.75),
+    'disabled': #a6a5a6,
+    // Status Colors
+      'status-info': $primary-ui__support-04,
+    'status-success': $primary-ui__support-02,
+    'status-warn': $primary-ui__support-03,
+    'status-error': $primary-ui__support-01
+  ),
+  'secondary-new': (
+    // dark theme background tints
+      'bg-primary': #464646,
+    'bg-secondary': #585758,
+    'bg-tertiary': #343334,
+    // needed for AP UI theme...
+      // Text Colors
+      'text-01': #eaeaea,
+    'text-02': #c0bfc0,
+    'text-03': #a6a5a6,
+    // Divider Color
+      'divider': #272727,
+    // Active Colors
+      'active': #40d5bb,
+    //TO DO: Update focus to read active, and reserve focus for the highlight, explore hover highlight colors
+      // static, active, hover, focus, disabled
+      'hover-light': #8ee9d4,
+    'hover-dark': #00baa1,
+    'hover-subtle': rgba(#000000, 0.3),
+    'hover-danger': $secondary-ui__hover-danger,
+    'focus-a11y': rgba(#95c4f3, 0.75),
+    'focus-highlight': rgba(#00b6cb, 0.75),
+    'disabled': #777677,
+    // Status Colors
+      'status-info': $primary-ui__support-04,
+    'status-success': $primary-ui__support-02,
+    'status-warn': $primary-ui__support-03,
+    'status-error': $primary-ui__support-01
+  )
 );
 
 @function palette($palette, $color) {
